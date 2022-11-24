@@ -21,6 +21,8 @@
 
 Anderson Santos
 
+Daniel Bento Alves
+
 Fernando H.B.S.
 
 Giovanni Dias
