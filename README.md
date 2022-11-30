@@ -1,15 +1,17 @@
+<div style="display: inline_block" align="center">
 
-
+<img src="https://myoctocat.com/assets/images/base-octocat.svg" width="35%">
 
   [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Bem+vindo+ao+Projeto+Integrador!)](https://git.io/typing-svg)
-
+</div>
 
 
 ##
 
 <div style="display: inline_block" align="center">
 
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="45%"/>
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="25%"/>
+ <img alt="HTML" width="25%" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
           
 # Projeto Integrador Proz 
 
