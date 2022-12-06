@@ -1,0 +1,27 @@
+
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 30px;
+  margin-bottom: 60px;
+}
+
+.follow p {
+  font-weight: 500;
+  color :rgba(54, 30, 93, 0.9);
+}
+
+.follow a {
+  color: #FF6422;
+}
+.follow a:hover {
+  color: #ffffff;
+  background: rgba(54, 30, 93, 0.9);
+}
+
+.follow a {
+  margin: 4px;
+  border-radius: 8px;
+  padding: 4px;
+}

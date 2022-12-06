@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: rgba(54, 30, 93, 0.9);
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  height: 35vmin;
+}
+
+/* Nav */
+
+.headerNav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 20px;
+  margin-right: 18px;
+}
+
+.headerNavMenu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+}
+.headerNavMenu  a {
+  font-size: 20px;
+  margin-left: 6px; 
+}
+
+.headerNav  ul li a:hover {
+  color: #f76a2ed8;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logoContainer img {
+  margin-top: -50px;
+  width: 300px;
+}
+
+.logoContainer img:hover {
+  animation: flipLogoImg 1s;
+}
+
+@keyframes flipLogoImg {
+  from {
+   transform: rotateX(120deg);
+  }
+  to {
+   transform: rotateX(0deg);
+  }
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.searchContainer form {
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+
+.searchContainer form input {
+ width: 500px;
+ height: 38px;
+ border-radius: 8px;
+ line-height: none;
+ border: none;
+ text-align: center;
+ font-size: 20px;
+ box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+#searchIcon  {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #FF6422;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+#searchIcon:hover {
+  background-color: #fff;
+  color: #FF6422;
+  font-weight: 700;
+}
+
+.linksNav {
+  display: flex;
+  flex-direction: row;
+  margin-top: -5px;
+}
+
+.linksNav a {
+  margin: 20px 5px;
+}
+
+.linksNav a:hover {
+  opacity: 0.9;
+  border-bottom: 2px solid #FF6422;
+}
+
+@media(max-width: 500px) {
+  .container{
+    margin: auto;
+    width: 100%;
+    height: 39vmin;
+  }
+
+  img {
+    margin-top: -50px;
+    width: 56%;
+  }
+
+  .searchContainer form input{
+    width: 370px;
+    height: 30px;
+   }
+
+   #searchIcon  {
+     cursor: pointer;
+     padding: 6px;
+     border-radius: 8px;
+     background-color: #FF6422;
+     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+   }
+   
+  .headerNavMenu  a {
+    font-size: 17px;
+    margin-left: 6px;
+  }
+
+  .linksNav a {
+    margin-top: 15px;  
+    font-size: 0.9rem; 
+  }
+
+}
+
+
