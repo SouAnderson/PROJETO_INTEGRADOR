@@ -42,4 +42,12 @@ Giovanni Dias
 
 </p>
 
+## Deploy da Página inicial.
+
+### A implementação foi feita na plataforma Netlify.
+
+https://iflag-corporation.netlify.app/
+
+
+
 </div>
