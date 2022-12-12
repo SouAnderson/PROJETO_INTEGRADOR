@@ -1,0 +1,132 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;  
+  color: aliceblue;
+
+}
+
+.mycart{
+  width:  50%;
+  padding-left: 15px;
+  margin-left: 15px;
+  margin-top: 2px;
+  margin-right: 10px;
+  border-radius: 10px;
+  float:inline-end;
+  font-style: italic;
+  background-color:rgba(54, 30, 93, 0.9);
+  text-align: end;
+  animation: a 0.5s ;  
+}
+
+.mycarrinho{    
+    width: 100px;  
+    height: 100px;
+    display: block;
+    text-align: end;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   a#fechar{
+    text-align: left;
+    font-size: 60px;
+    padding: 20px;
+   }
+   h1#cabProd{
+    text-align: left;
+    font-size: 200%;
+    color: aliceblue;
+   }
+   .stepper-input {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    padding: 5px;
+    
+  }
+   
+  .stepper-input .btn {
+    cursor: pointer;
+    padding: 0.5em;
+    color: #fff;
+    background-color: #FF6422;
+    border: 1px solid #FF6422;
+    font-size: 20px;
+  }
+  .btn-right {
+    border-radius: 0 10px 10px 0;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .btn-left {
+    border-radius: 10px 0 0 10px;
+  }
+   .tresumo label{
+    font-size: 30px;
+    margin-right: 0%;
+   }
+   .tresumo input{
+    font-size: 25px;
+    margin-left: 0px;
+    text-align: end;
+    background-color: rgb(26, 20, 24);
+   }
+   .tresumo tr{
+      text-align: left;
+      }
+.totaliza{
+  width: 200px;
+}      
+   .pagar button{
+    font-size: 30px;    
+    text-align: center;
+    background-color: #FF6422;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+   }
+   h3#cabresumo{
+    text-align: left;
+    font-size: 30px;
+    color: aliceblue;
+    
+   }
+
+.maisprodutos{
+  width: 70px;    
+  display: block;
+  margin-left: auto;
+  margin-right: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+.tprodutos{  
+  text-align: left;  
+  
+}
+
+.tprodutos img{
+   width: 150px;   
+  }
+
+@keyframes a {
+	0%{
+    display: block;
+    width: 0%;
+    }
+    50%{
+    width: 10%;
+    }
+    100%{
+    width: 30%;
+    }
+
+}

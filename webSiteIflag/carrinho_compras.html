@@ -18,9 +18,9 @@
 </head>
 
 <body>
-
+  
   <header>
-
+   
     <div class="container">
 
       <nav class="headerNav">
@@ -31,15 +31,10 @@
               <i class="fa-regular fa-user"></i>
             </a>
           </li>
-          <li>
-            <a href="../iflagHome/carrinho_compras.html">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </li>
         </ul>
 
       </nav>
-
+      
       <div class="logoContainer">
         <img src="./img/logo.jpg">
       </div>
@@ -58,10 +53,91 @@
         </div><br><br>
 
       </div>
-
-    </div>
-
+     
+    </div>   
   </header>
+   <aside class="mycart">
+        <table>
+         <tr>
+            <a id="fechar" href="./home.html">
+              <i class="fas fa-times"></i>
+            </a>
+            <img src="../carrinho.png" class="mycarrinho" alt="Carrinho de Compras">                   
+          
+         </tr>         
+     </table >    
+         <table class="tprodutos"> 
+            <tr>
+              <h1 id="cabProd">PRODUTOS</h1>
+              <hr size="1" Align="left" width="100%">
+            </tr>                        
+             <tr >                
+                 <td style="width: 15%"><img src="../P1.png"></td>   
+                 <td style="width: 35%"><h3>ACER Notebook Gamer Nitro 5 AN515-55-59T4, Intel Core I5 10ª geração, 8GB, 512GB SDD, NVIDIA GTX 1650, Windows, preto, 15.6 Polegadas<br>R$ 4.299,99 </h3>
+                  <div class="stepper-input">
+                    <button class="btn btn-left">-</button>
+                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
+                    <button class="btn btn-right">+</button>                    
+                   </div>                                                                      
+                </td>                         
+                 <td><img src="../P2.png"></td>   
+                 <td><h3>
+                  Teclado E Mouse Gamer C/ Fio Detalhes Azuis Multilaser-tc195
+                  Marca: Multilaser<br>R$ 89,90 
+                  </h3>
+                  <div class="stepper-input">
+                    <button class="btn btn-left">-</button>
+                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
+                    <button class="btn btn-right">+</button>                    
+                   </div>                                                                      
+                </td>               
+             </tr>
+             <tr>
+                 <td style="width: 15%"><img src="../P3.png"></td>                
+                 <td style="width: 35%"><h3>Cpu Completo Intel Core I5 8gb Ssd 240gb + Monitor + Kit<br>R$ 1.387,00  </h3>
+                  <div class="stepper-input">
+                    <button class="btn btn-left">-</button>
+                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
+                    <button class="btn btn-right">+</button>                    
+                   </div>                                                                                      
+                </td>             
+                 <td><img src="../P4.png"></td>                
+                 <td><h3>Base para Notebook Multi Hexa com 6 Coolers até 17" - AC282 <br>R$ 119,99</h3>
+                  <div class="stepper-input">
+                    <button class="btn btn-left">-</button>
+                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
+                    <button class="btn btn-right">+</button>                    
+                   </div>                                                      
+                </td>  
+            </tr>
+           
+         </table>   
+         <table class="tresumo">   
+          <tr>
+            <img src="../maisprodutos.png" class="maisprodutos" type="button">
+          </tr>       
+             <tr>
+                 <h3 id="cabresumo">RESUMO DO PEDIDO</h3><hr size="1" Align="left" width="100%">
+             </tr> 
+             <tr>
+                 <td class="totaliza"><label>Subtotal R$:</label></td>
+                 <td><Input type="text" name="subtotal" disabled value="5896,88"></Input></td>                     
+             </tr>
+             <tr>
+                 <td><label>Frete R$:</label></td>
+                 <td><Input type="text" name="frete" disabled value="120,00"></Input></td>                                     
+             </tr>
+             <tr>
+                 <td width="25%"><label>Total geral R$:</label></td>
+                 <td><Input type="text" name="total_geral" disabled value="6016,88"></Input></td>                                                                                      
+                 <td></td>
+             </tr>     
+
+         </table>                  
+      <div class="pagar"> 
+        <a href="#"><button name="btn_paga">Pagar agora <br> <img src="../compra-segura.png" width="30%" > </button></a></td></td></td></td></td>
+      </div>
+   </aside>
   <section class="home-cards">
     <div>
       <img src="https://i.ibb.co/zVqhWn2/card5.png" alt="Time image" />
@@ -96,51 +172,6 @@
       </p>
     </div>
   </section>
-  <aside class="mycart">
-   <table>
-    <tr>
-        <td><h1> CARRINHO DE COMPRAS </h1> </td>                       
-    </tr>
-    <tr>
-        <td><td><input type="button" value="+ Produtos"></td>
-    </tr>
-</table>    
-    <table >
-        <tr>
-            <h3>PRODUTOS</h3><hr size="1" Align="left" width="35%">
-        </tr> 
-        <tr>                
-            <td><img src="./prod1.jpg"></td>   
-            <td><h3>PRODUTO 1</h3></td>             
-        </tr>
-        <tr>
-            <td><img src="./prod2.jpg"></td>   
-            <td><h3>PRODUTO 2</h3></td>               
-        </tr>
-        <tr>
-            <td><img src="./prod3.jpg"></td>                
-            <td><h3>PRODUTO 3</h3></td>  
-        </tr>
-    </table>   
-    <table > 
-        <tr>
-            <h3>RESUMO DO PEDIDO</h3><hr size="1" Align="left" width="35%">
-        </tr> 
-        <tr>
-            <td><label>Subtotal R$:</label></td>
-            <td><Input type="text" name="subtotal" disabled value="0,00"></Input></td>                     
-        </tr>
-        <tr>
-            <td><label>Frete R$:</label></td>
-            <td><Input type="text" name="frete" disabled value="0,00"></Input></td>                                     
-        </tr>
-        <tr>
-            <td width="25%"><label>Total geral R$:</label></td>
-            <td><Input type="text" name="total_geral" disabled value="0,00"></Input></td>                                                                     
-            <td width="20%"></td><td><button name="btn_paga">Ir para pagamento <br> (compra segura) </button></td>                                            
-        </tr>
-    </table>                  
-</aside> 
  
   <article class="carbon-dark">
     <div class="content">
