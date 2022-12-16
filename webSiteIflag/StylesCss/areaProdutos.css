@@ -1,0 +1,47 @@
+.section-main{
+    display: flex;
+
+}
+
+.menu-filtros{
+    margin: 80px 20px;
+    padding: 20px;
+    height: 500px;
+    width: 200px;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-color: rgb(108, 108, 116);
+}
+
+
+li{
+    margin: 0px 0px 30px 0px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+.cards-produtos{
+    margin: 80px 20px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(49, 141, 141);
+}
+
+.div-card{
+    display: flex;
+
+
+
+}
+
+.card{
+    background-color: brown;
+    height:200px;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
