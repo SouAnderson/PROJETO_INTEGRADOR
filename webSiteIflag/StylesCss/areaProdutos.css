@@ -23,25 +23,63 @@ a {
 }
 
 .cards-produtos{
-    margin: 80px 20px;
-    padding: 20px;
+    margin: 90px 20px;
+    padding: 10px;
     height: 100%;
     width: 100%;
-    background-color: rgb(49, 141, 141);
-}
-
-.div-card{
     display: flex;
-
-
-
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*background-color: rgb(49, 141, 141);*/
 }
 
 .card{
-    background-color: brown;
-    height:200px;
+    background-color: rgb(236, 236, 236);
+    height:380px;
     width: 300px;
-    margin: 20px;
+    margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
+    /*border: 1px solid rgb(108, 108, 116);*/
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#valor{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+img{
+    max-width: 100%;
+    /*height:150px;
+    width: 280x;
+    margin-bottom: 5px;*/
+}
+
+.text-card{
+    margin: 10px 0px;
+} 
+
+.text-card:hover{
+    transform: rotate(-1deg);
+    
+}
+
+button{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(54, 30, 93, 0.9);
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid rgba(54, 30, 93, 0.9);
+    transition: 0.5s;
+
+}
+
+button:hover{
+    color: rgba(54, 30, 93, 0.9);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
 }
