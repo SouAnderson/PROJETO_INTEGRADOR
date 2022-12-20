@@ -20,11 +20,8 @@
 <body>
   
   <header>
-   
     <div class="container">
-
       <nav class="headerNav">
-
         <ul class="headerNavMenu">
           <li>
             <a href="#">
@@ -32,147 +29,130 @@
             </a>
           </li>
         </ul>
-
       </nav>
-      
       <div class="logoContainer">
-        <img src="./img/logo.jpg">
+        <img src="../webSiteIflag/img/logo.jpg">
       </div>
-
       <div class="searchContainer">
         <form>
-          <input type="text" name="search" placeholder="search...">
-          <a id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <input type="text" id="search" name="search" placeholder="search..." focus>
+          <a onclick="send()" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
         </form>
-
         <div class="linksNav">
           <a href="#">Catálago de Produtos</a>
           <a href="#">Promoção de natal</a>
           <a href="#">Quem Somos</a>
           <a href="#">Suas Listas</a>
         </div><br><br>
-
       </div>
-     
-    </div>   
+    </div>
   </header>
    <aside class="mycart">
-        <table>
-         <tr>
-            <a id="fechar" href="./home.html">
+        <header class="carrinhoCab">          
+            <a id="fechar" href="homePage.html" >
               <i class="fas fa-times"></i>
-            </a>
-            <img src="../carrinho.png" class="mycarrinho" alt="Carrinho de Compras">                   
-          
-         </tr>         
-     </table >    
-         <table class="tprodutos"> 
-            <tr>
-              <h1 id="cabProd">PRODUTOS</h1>
-              <hr size="1" Align="left" width="100%">
-            </tr>                        
-             <tr >                
-                 <td style="width: 15%"><img src="../P1.png"></td>   
-                 <td style="width: 35%"><h3>ACER Notebook Gamer Nitro 5 AN515-55-59T4, Intel Core I5 10ª geração, 8GB, 512GB SDD, NVIDIA GTX 1650, Windows, preto, 15.6 Polegadas<br>R$ 4.299,99 </h3>
+            </a>                    
+            <img src="../webSiteIflag/img/carrinho.png" class="mycarrinho" alt="Carrinho de Compras">
+            <h1>Carrinho de Compras</h1>                              
+        </header>    
+         <div>             
+            <h1 id="cabProd">PRODUTOS</h1>
+            <h1 id="cabPreco">PREÇO</h1>
+            <hr size="1" Align="left" width="100%">
+         </div>   
+         <div class="tprodutos">
+              <div>
+                  <img src="../webSiteIflag/img/P1.png">                  
+              </div>              
+              <div>
+                  <h2>ACER Notebook Gamer Nitro 5 AN515-55-59T4, Intel Core I5 10ª geração, 8GB, 512GB SDD, NVIDIA GTX 1650, Windows, preto, 15.6 Polegadas</h2>
                   <div class="stepper-input">
                     <button class="btn btn-left">-</button>
                     <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
                     <button class="btn btn-right">+</button>                    
-                   </div>                                                                      
-                </td>                         
-                 <td><img src="../P2.png"></td>   
-                 <td><h3>
-                  Teclado E Mouse Gamer C/ Fio Detalhes Azuis Multilaser-tc195
-                  Marca: Multilaser<br>R$ 89,90 
-                  </h3>
+                  </div>                                                                                                                 
+              </div>
+              <div>
+                <h1>R$ 4.299,99 </h1>
+              </div>
+               <div>
+                  <img src="../webSiteIflag/img/P2.png">
+              </div> 
+              <div>
+                  <h2>    
+                      Teclado E Mouse Gamer C/ Fio Detalhes Azuis Multilaser-tc195
+                      Marca: Multilaser  R$ 89,90 
+                  </h2>                
                   <div class="stepper-input">
                     <button class="btn btn-left">-</button>
                     <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
                     <button class="btn btn-right">+</button>                    
-                   </div>                                                                      
-                </td>               
-             </tr>
-             <tr>
-                 <td style="width: 15%"><img src="../P3.png"></td>                
-                 <td style="width: 35%"><h3>Cpu Completo Intel Core I5 8gb Ssd 240gb + Monitor + Kit<br>R$ 1.387,00  </h3>
+                  </div>                                                                                                                 
+                </div>
+                <div>
+                  <h1> R$ 89,90 </h1>
+                </div>                  
+                <div>
+                    <img src="../webSiteIflag/img/P3.png">            
+                 </div>
+                 <div>
+                    <h2>Cpu Completo Intel Core I5 8gb Ssd 240gb + Monitor + Kit  R$ 1.387,00  </h2>
+                    <div class="stepper-input">
+                      <button class="btn btn-left">-</button>
+                      <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
+                      <button class="btn btn-right">+</button>                    
+                    </div>                                                                                                      
+                 </div>     
+                  <div>
+                    <h1>R$ 1.387,00  </h1>
+                 </div>     
+                <div>
+                   <img src="../webSiteIflag/img/P4.png"> 
+                 </div>                    
+                <div>
+                  <h2>Base para Notebook Multi Hexa com 6 Coolers até 17" - AC282 R$ 119,99</h2>
                   <div class="stepper-input">
                     <button class="btn btn-left">-</button>
                     <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
                     <button class="btn btn-right">+</button>                    
-                   </div>                                                                                      
-                </td>             
-                 <td><img src="../P4.png"></td>                
-                 <td><h3>Base para Notebook Multi Hexa com 6 Coolers até 17" - AC282 <br>R$ 119,99</h3>
-                  <div class="stepper-input">
-                    <button class="btn btn-left">-</button>
-                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
-                    <button class="btn btn-right">+</button>                    
-                   </div>                                                      
-                </td>  
-            </tr>
-           
-         </table>   
-         <table class="tresumo">   
-          <tr>
-            <img src="../maisprodutos.png" class="maisprodutos" type="button">
-          </tr>       
-             <tr>
-                 <h3 id="cabresumo">RESUMO DO PEDIDO</h3><hr size="1" Align="left" width="100%">
-             </tr> 
-             <tr>
-                 <td class="totaliza"><label>Subtotal R$:</label></td>
-                 <td><Input type="text" name="subtotal" disabled value="5896,88"></Input></td>                     
-             </tr>
-             <tr>
-                 <td><label>Frete R$:</label></td>
-                 <td><Input type="text" name="frete" disabled value="120,00"></Input></td>                                     
-             </tr>
-             <tr>
-                 <td width="25%"><label>Total geral R$:</label></td>
-                 <td><Input type="text" name="total_geral" disabled value="6016,88"></Input></td>                                                                                      
-                 <td></td>
-             </tr>     
-
-         </table>                  
+                 </div>                                                                                                     
+                </div>                 
+                 <div>
+                  <h1>R$ 119,99</h1>
+                </div>                 
+          </div>   
+         <footer class="tresumo">   
+          <div>
+            <a class="maisprodutos" href="#">
+              <i class="fa-solid fa-circle-plus"></i>
+            </a>            
+          </div>       
+          <div>
+              <h3 id="cabresumo">RESUMO DO PEDIDO</h3>
+              <br>
+              <hr size="1" Align="left" width="100%"></h3>
+              <br>
+          </div>
+          <div class="valores">
+             
+                 <label>Subtotal R$:</label>
+                 <Input type="text" name="subtotal" disabled value="5896,88"></Input>                     
+             
+             
+                 <label>Frete R$:</label>
+                 <Input type="text" name="frete" disabled value="120,00"></Input>                                   
+             
+             
+                 <label>Total geral R$:</label>
+                 <Input type="text" name="total_geral" disabled value="6016,88"></Input>                                                                                                      
+             
+          </div>   
+         </footer>                  
       <div class="pagar"> 
-        <a href="#"><button name="btn_paga">Pagar agora <br> <img src="../compra-segura.png" width="30%" > </button></a></td></td></td></td></td>
+        <a href="#"><button name="btn_paga">Fechar pedido <br> <img src="../webSiteIflag/img/compra-segura.png" width="30%" > </button></a></td></td></td></td></td>
       </div>
    </aside>
-  <section class="home-cards">
-    <div>
-      <img src="https://i.ibb.co/zVqhWn2/card5.png" alt="Time image" />
-      <h3>Times iFlag</h3>
-      <p>
-        Libere o poder de sua equipe.
-      </p>
-      <a href="#">Comprar agorar <i class="fas fa-chevron-right"></i></a>
-    </div>
-    <div>
-      <img src="https://i.ibb.co/mGZcxcn/card6.jpg" alt="image" />
-      <h3>Desbloqueie o poder do aprendizado</h3>
-      <p>
-        Prepare os alunos para o futuro com dispositivos poderosos.
-      </p>
-      <a href="#">Comprar agora <i class="fas fa-chevron-right"></i></a>
-    </div>
-    <div>
-      <img src="https://i.ibb.co/NpPvVHj/card7.png" alt="Image" />
-      <h3>iFlag empreendimentos</h3>
-      <p>
-        Baixe a avaliação gratuita de 90 dias para profissionais de TI.
-      </p>
-    </div>
-    <div>
-      <img src="https://i.ibb.co/LkP4L5T/card8.png" alt="Kubernetes image" />
-      <h3>
-        Explorar o Kubernetes</h3>
-      <p>
-        Saiba como o Kubernetes funciona e comece a usar o aplicativo nativo da nuvem
-        desenvolvimento hoje.
-      </p>
-    </div>
-  </section>
- 
+  
   <article class="carbon-dark">
     <div class="content">
       <h2>Compromisso com o Carbono Negativo</h2>
