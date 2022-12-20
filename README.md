@@ -40,6 +40,8 @@ Giovanni Dias
 
 * Apresentação da segunda Sprint, dia 24 de novembro.
 
+* Apresentação da terceira Sprint, dia 21 de dezembro.
+
 </p>
 
 ## 
@@ -48,9 +50,9 @@ Giovanni Dias
 
 #### A implementação foi feita na plataforma Netlify.
 
-https://iflag-corporation.netlify.app/
+https://iflag-homepage.netlify.app/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f6f4500d-0664-4e95-9f69-dd6c79067f0f/deploy-status)](https://app.netlify.com/sites/iflag-corporation/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bacf13cc-e204-4b26-8c27-c3fcd80f6e2a/deploy-status)](https://app.netlify.com/sites/iflag-homepage/deploys)
   
 ##
 
