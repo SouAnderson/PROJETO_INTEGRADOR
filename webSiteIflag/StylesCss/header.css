@@ -63,19 +63,6 @@ ul {
   width: 300px;
 }
 
-.logoContainer img:hover {
-  animation: flipLogoImg 1s;
-}
-
-@keyframes flipLogoImg {
-  from {
-   transform: rotateX(120deg);
-  }
-  to {
-   transform: rotateX(0deg);
-  }
-}
-
 .searchContainer {
   display: flex;
   align-items: center;
