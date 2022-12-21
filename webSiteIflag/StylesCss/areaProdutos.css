@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 .section-main{
     display: flex;
 
@@ -11,6 +20,7 @@
     border-right-width: 2px;
     border-right-style: solid;
     border-color: rgb(108, 108, 116);
+    color: black;
 }
 
 
@@ -18,9 +28,12 @@ li{
     margin: 0px 0px 30px 0px;
 }
 
-a {
-    color: rgb(0, 0, 0);
+.menu li a{
+    color:rgb(0, 0, 0)
 }
+/*a {
+    color: rgb(0, 0, 0);
+}*/
 
 .cards-produtos{
     margin: 90px 20px;
