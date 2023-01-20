@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>homeIflag</title>
   <link rel="stylesheet" href="../webSiteIflag/StylesCss/mycart.css">
+  <script src="script-carrinho.js" defer></script>
 </head>
 
 <body>
@@ -47,20 +48,49 @@
       </div>
     </div>
   </header>
-   <aside class="mycart">
-        <header class="carrinhoCab">          
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <section class="mycart">
+        <div class="carrinhoCab">    
+            <img src="../webSiteIflag/img/carrinho.png" class="mycarrinho" alt="Carrinho de Compras">
+            <h1>Carrinho de Compras</h1>   
             <a id="fechar" href="homePage.html" >
               <i class="fas fa-times"></i>
-            </a>                    
-            <img src="../webSiteIflag/img/carrinho.png" class="mycarrinho" alt="Carrinho de Compras">
-            <h1>Carrinho de Compras</h1>                              
-        </header>    
-         <div>             
-            <h1 id="cabProd">PRODUTOS</h1>
-            <h1 id="cabPreco">PREÇO</h1>
-            <hr size="1" Align="left" width="100%">
-         </div>   
-         <div class="tprodutos">
+            </a>                                                                           
+        </div>    
+        <div>
+          <hr size="1" Align="left" width="100%">
+        </div>    
+        <aside class="resumo">                   
+          <div>
+              <h3 id="cabresumo">RESUMO DO PEDIDO</h3>
+              <hr size="1" Align="left" width="100%"></h3>
+          </div>
+          <div class="valores">
+            <label>Subtotal R$:</label>
+            <Input type="text" name="subtotal" disabled value="5896,88"></Input>                     
+            <label>Frete R$:</label>
+            <Input type="text" name="frete" disabled value="120,00"></Input>                                   
+            <label>Total geral R$:</label>
+            <Input type="text" name="total_geral" disabled value="6016,88"></Input>                                                                                                                   
+          </div>            
+          <br>
+          <div class="pagar"> 
+            <a href="#"><button name="btn_paga">Fechar pedido <br> <img src="../webSiteIflag/img/compra-segura.png" width="50%" > </button></a></td></td></td></td></td>
+          </div>
+        </aside>   
+        <div class="tprodutos">                    
+              <div>     
+                <h1 id="cabProd">PRODUTOS</h1>   
+              </div>
+              <div>                             
+                <a class="maisprodutos" href="#">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </a>                                                         
+
+             </div>  
+             <div>
+              <h1 id="cabPreco">PREÇO</h1>
+             </div>                  
               <div>
                   <img src="../webSiteIflag/img/P1.png">                  
               </div>              
@@ -68,14 +98,14 @@
                   <h2>ACER Notebook Gamer Nitro 5 AN515-55-59T4, Intel Core I5 10ª geração, 8GB, 512GB SDD, NVIDIA GTX 1650, Windows, preto, 15.6 Polegadas</h2>
                   <div class="stepper-input">
                     <button class="btn btn-left">-</button>
-                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
+                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
                     <button class="btn btn-right">+</button>                    
                   </div>                                                                                                                 
               </div>
               <div>
                 <h1>R$ 4.299,99 </h1>
               </div>
-               <div>
+              <div>
                   <img src="../webSiteIflag/img/P2.png">
               </div> 
               <div>
@@ -85,7 +115,7 @@
                   </h2>                
                   <div class="stepper-input">
                     <button class="btn btn-left">-</button>
-                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
+                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
                     <button class="btn btn-right">+</button>                    
                   </div>                                                                                                                 
                 </div>
@@ -94,77 +124,37 @@
                 </div>                  
                 <div>
                     <img src="../webSiteIflag/img/P3.png">            
-                 </div>
-                 <div>
+                </div>
+                <div>
                     <h2>Cpu Completo Intel Core I5 8gb Ssd 240gb + Monitor + Kit  R$ 1.387,00  </h2>
                     <div class="stepper-input">
                       <button class="btn btn-left">-</button>
-                      <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
+                      <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
                       <button class="btn btn-right">+</button>                    
                     </div>                                                                                                      
-                 </div>     
+                </div>     
                   <div>
                     <h1>R$ 1.387,00  </h1>
-                 </div>     
+                </div>     
                 <div>
-                   <img src="../webSiteIflag/img/P4.png"> 
-                 </div>                    
+                  <img src="../webSiteIflag/img/P4.png"> 
+                </div>                    
                 <div>
                   <h2>Base para Notebook Multi Hexa com 6 Coolers até 17" - AC282 R$ 119,99</h2>
                   <div class="stepper-input">
                     <button class="btn btn-left">-</button>
-                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;font-size: 30px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
+                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
                     <button class="btn btn-right">+</button>                    
-                 </div>                                                                                                     
+                </div>                                                                                                     
                 </div>                 
-                 <div>
+                <div>
                   <h1>R$ 119,99</h1>
                 </div>                 
           </div>   
-         <footer class="tresumo">   
-          <div>
-            <a class="maisprodutos" href="#">
-              <i class="fa-solid fa-circle-plus"></i>
-            </a>            
-          </div>       
-          <div>
-              <h3 id="cabresumo">RESUMO DO PEDIDO</h3>
-              <br>
-              <hr size="1" Align="left" width="100%"></h3>
-              <br>
-          </div>
-          <div class="valores">
-             
-                 <label>Subtotal R$:</label>
-                 <Input type="text" name="subtotal" disabled value="5896,88"></Input>                     
-             
-             
-                 <label>Frete R$:</label>
-                 <Input type="text" name="frete" disabled value="120,00"></Input>                                   
-             
-             
-                 <label>Total geral R$:</label>
-                 <Input type="text" name="total_geral" disabled value="6016,88"></Input>                                                                                                      
-             
-          </div>   
-         </footer>                  
-      <div class="pagar"> 
-        <a href="#"><button name="btn_paga">Fechar pedido <br> <img src="../webSiteIflag/img/compra-segura.png" width="30%" > </button></a></td></td></td></td></td>
-      </div>
-   </aside>
-  
-  <article class="carbon-dark">
-    <div class="content">
-      <h2>Compromisso com o Carbono Negativo</h2>
-      <img
-        src="https://img.freepik.com/fotos-gratis/uma-estrada-estreita-cercada-por-arvores-verdes-em-windsor-inglaterra_181624-11528.jpg?w=2000"
-        alt="Árvore foto.">
-      <p>A iFlag será negativa em carbono<br>até 2030 e até 2050 removeremos
-        todo carbono<br>que a empresa emitiu desde sua fundação em 1975.</p>
-    </div>
-  </article>
-
-  <section class="follow">
+      </section>             
+   
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+    <section class="follow">
     <p>Siga iFlag</p>
     <a href="#">
       <i class="fa-brands fa-facebook"></i>
@@ -260,7 +250,7 @@
 
 
 </body>
-
+<script src="./app.js"></script>
 <script src="https://kit.fontawesome.com/53d15467bd.js" crossorigin="anonymous"></script>
 
 </html>
