@@ -23,15 +23,14 @@
   margin-left: 15px;
   margin-top: 8px;
   margin-right: 10px;
-  border-radius: 10px;
-  
+  border-radius: 10px;   
 }
 .carrinhoCab{
   display: flex;
   justify-content:space-between ;
   align-items:center;
   margin-bottom: 12px;
-  padding: 0 2.6rem;     
+  padding: 0 2.6rem;       
  }
 a#fechar{    
   font-size: 60px;  
@@ -39,11 +38,12 @@ a#fechar{
 }
 h1#cabProd{
   text-align: center;
-  font-size: 120%;    
+  font-size: 120%;      
 }
 h1#cabPreco{ 
   margin-right: 30px;
   font-size: 150%;
+  
  }
 
 .carrinhoCab h1{
@@ -142,17 +142,12 @@ h1#cabPreco{
    }
 
 .maisprodutos{
-  width: 170px;    
   font-size: 60px;
-  display: block;
-  margin-left: auto;
-  margin-right: 0 auto;
-  padding-top: 0;
-  padding-bottom: 0;
+  display: flex;    
   cursor: pointer;
   text-align: end;
-  margin-right: 30px;
   color: rgba(54, 30, 93, 0.9);  
+ width: 20px;
 }
 .tprodutos{  
   display: grid;
