@@ -62,18 +62,64 @@
         </div>    
         <aside class="resumo">                   
           <div>
-              <h3 id="cabresumo">RESUMO DO PEDIDO</h3>
+              <h3 id="cabresumo">RESUMO DO PEDIDO</h3>              
               <hr size="1" Align="left" width="100%"></h3>
+              <br>
+          </div>
+          <p id="cep-helper" class="helper-text">O campo CEP é obrigatório!</p>
+          <div class="inf-CEP">
+            
+            <label for="cep" class="lbl-CEP">*Digite seu CEP</label>            
+            <input class="input-CEP" type="text" id="cep" name="cep"  oninput="maskCEP(this)" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000">            
+            <br>
+            <button class="btn-CEP"style="border-radius: 5px; background-color: purple;">OK</button>
+            <br>
+            
+          </div>
+          <div class="cabValores">
+            <div>
+              <label for="delivery">Formas de entrega</label>  
+            </div>           
           </div>
           <div class="valores">
-            <label>Subtotal R$:</label>
-            <Input type="text" name="subtotal" disabled value="5896,88"></Input>                     
-            <label>Frete R$:</label>
-            <Input type="text" name="frete" disabled value="120,00"></Input>                                   
-            <label>Total geral R$:</label>
-            <Input type="text" name="total_geral" disabled value="6016,88"></Input>                                                                                                                   
-          </div>            
-          <br>
+            <div>
+              <input type="radio"  id="transportadora" name="delivery" value="transportadora" onclick="verificaTransporte(this,20)">
+              <label for="transportadora"><img src="../webSiteIflag/img/transportadora.png"></label>
+            </div>
+            <div>
+              <label class="frete frete-transportadora"> 4 dias* - R$ 20,00</label>
+            </div>   
+            <div>
+              <input type="radio" checked="false" id="fedex" name="delivery" value="fedex" onchange="verificaTransporte(this,23)">
+              <label for="fedex"><img src="../webSiteIflag/img/fedex.png"></label>  
+            </div>
+            <div>            
+              <label class="frete frete-fedex">  5 dias* - R$ 23,00</label>
+            </div>
+            <div>
+              <input type="radio" checked="false"  id="correios" name="delivery" value="correios" onchange="verificaTransporte(this,42)">
+              <label for="correios"><img src="../webSiteIflag/img/correios.png"></label>
+            </div>
+            <div>
+              <label class="frete frete-correios" >4 dias* - R$ 42,00</label>
+            </div>  
+            <div>
+              <input type="radio" checked="false"  id="jamef" name="delivery" value="jamef" onchange="verificaTransporte(this,62)">
+              <label for="jamef"><img src="../webSiteIflag/img/jamef.png"></label>
+            </div>
+            <div>
+              <label class="frete frete-jamef" > 3 dias* - R$ 62,00</label>
+            </div>    
+            <div>
+              <label class="valor-frete" >Frete:</label>
+            </div>  
+            <div></div>
+            <div>
+              <label class="total-prod" >Total geral:</label>
+            </div>                                             
+          </div>
+          </div>   
+                       
           <div class="pagar"> 
             <a href="#"><button name="btn_paga">Fechar pedido <br> <img src="../webSiteIflag/img/compra-segura.png" width="50%" > </button></a></td></td></td></td></td>
           </div>
@@ -82,74 +128,14 @@
               <div>     
                 <h1 id="cabProd">PRODUTOS</h1>   
               </div>
-              <div>                             
+              <div>                                           
                 <a class="maisprodutos" href="#">
                   <i class="fa-solid fa-circle-plus"></i>
                 </a>                                                         
-
              </div>  
              <div>
-              <h1 id="cabPreco">PREÇO</h1>
-             </div>                  
-              <div>
-                  <img src="../webSiteIflag/img/P1.png">                  
-              </div>              
-              <div>
-                  <h2>ACER Notebook Gamer Nitro 5 AN515-55-59T4, Intel Core I5 10ª geração, 8GB, 512GB SDD, NVIDIA GTX 1650, Windows, preto, 15.6 Polegadas</h2>
-                  <div class="stepper-input">
-                    <button class="btn btn-left">-</button>
-                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
-                    <button class="btn btn-right">+</button>                    
-                  </div>                                                                                                                 
-              </div>
-              <div>
-                <h1>R$ 4.299,99 </h1>
-              </div>
-              <div>
-                  <img src="../webSiteIflag/img/P2.png">
-              </div> 
-              <div>
-                  <h2>    
-                      Teclado E Mouse Gamer C/ Fio Detalhes Azuis Multilaser-tc195
-                      Marca: Multilaser  R$ 89,90 
-                  </h2>                
-                  <div class="stepper-input">
-                    <button class="btn btn-left">-</button>
-                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
-                    <button class="btn btn-right">+</button>                    
-                  </div>                                                                                                                 
-                </div>
-                <div>
-                  <h1> R$ 89,90 </h1>
-                </div>                  
-                <div>
-                    <img src="../webSiteIflag/img/P3.png">            
-                </div>
-                <div>
-                    <h2>Cpu Completo Intel Core I5 8gb Ssd 240gb + Monitor + Kit  R$ 1.387,00  </h2>
-                    <div class="stepper-input">
-                      <button class="btn btn-left">-</button>
-                      <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
-                      <button class="btn btn-right">+</button>                    
-                    </div>                                                                                                      
-                </div>     
-                  <div>
-                    <h1>R$ 1.387,00  </h1>
-                </div>     
-                <div>
-                  <img src="../webSiteIflag/img/P4.png"> 
-                </div>                    
-                <div>
-                  <h2>Base para Notebook Multi Hexa com 6 Coolers até 17" - AC282 R$ 119,99</h2>
-                  <div class="stepper-input">
-                    <button class="btn btn-left">-</button>
-                    <input type="text" value="01" style="padding-left: 0px;padding-right: 0px;width: 80px;color: #550dac;text-align: center;" placeholder="Quantidade" class="input-box" font-size="1px">
-                    <button class="btn btn-right">+</button>                    
-                </div>                                                                                                     
-                </div>                 
-                <div>
-                  <h1>R$ 119,99</h1>
-                </div>                 
+              <h1 id="cabPreco">PREÇO</h1>              
+             </div>                                                                                             
           </div>   
       </section>             
    

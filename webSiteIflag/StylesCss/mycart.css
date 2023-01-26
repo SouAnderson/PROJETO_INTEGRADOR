@@ -30,6 +30,7 @@
   display: flex;
   justify-content:space-between ;
   align-items:center;
+  margin-bottom: 12px;
   padding: 0 2.6rem;     
  }
 a#fechar{    
@@ -59,20 +60,28 @@ h1#cabPreco{
   float:inline-end;  
    background-color:rgba(235, 228, 247, 0.9);  
   font-size: 20px;  
-  margin-top: 20px;  
+  margin-top: 0px;  
 }
    .mycarrinho{    
     width: 100px;  
     height: 100px;    
     grid-area: i;
    }
-
+   .fa-trash {         
+    color: rgba(54, 30, 93, 0.9);
+    cursor:pointer;        
+    margin-left: 12px;     
+    font-size: 40px;
+    
+   }
    
   .stepper-input{
-    text-align: end;    
+    text-align: end;  
+    width: 110%;      
   }
   .stepper-input input{
-    font-size: 30px;
+    font-size: 20px;     
+    padding: 0.5em;   
   }
    .stepper-input .btn {
     cursor: pointer;
@@ -81,6 +90,13 @@ h1#cabPreco{
     background-color:  rgba(54, 30, 93, 0.9);
     border: 1px solid  rgba(54, 30, 93, 0.9);
     font-size: 20px;
+  }
+  .stepper-input .btnt {
+    cursor: pointer;  
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+    height: 50px;
   }
   .btn-right {
     border-radius: 0 10px 10px 0;
@@ -91,34 +107,20 @@ h1#cabPreco{
     border-radius: 10px 0 0 10px;
   }
    .resumo label{
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 2%;
-    
+    margin: 8px;
+    margin-bottom: 15px;
    }
-   .valores{    
-    display: grid;
-    grid-template-columns: 20fr 15fr;
-    grid-template-rows: 4vh 4vh 4vh 25vh;
-    justify-items: left;   
-    padding: 30px; 
-    
-    
-   }
-  .valores input{
-    width: 100%;
-    font-size: 20px;
-    margin-left: 0px;
-    margin-right: 10px;
-    text-align: end;    
-   }
-  
+     
 .totaliza{
   width: 200px;  
 }     
 .pagar{  
     text-align:end;
+    display: none;
 } 
-   .pagar button{
+.pagar button{
     font-size: 100%;    
     text-align: center;
     background-image:linear-gradient(to right, rgba(54, 30, 93, 0.9), rgba(182, 154, 228, 0.9));
@@ -127,6 +129,7 @@ h1#cabPreco{
     width: 250px;
     cursor: pointer;
     padding: 5px;
+    margin-top: 40px;
     margin-bottom: 20px;
     margin-right: 30px;
     padding: 10px;
@@ -135,7 +138,7 @@ h1#cabPreco{
    h3#cabresumo{
     text-align: left;
     font-size: 20px;    
-    margin-top: 30px;    
+    margin-top: 30px;        
    }
 
 .maisprodutos{
@@ -155,17 +158,73 @@ h1#cabPreco{
   display: grid;
     grid-template-columns: 1fr 8fr 3fr;
     grid-template-rows: 12vh 12vh 12vh 12vh;
-    grid-template-areas:"h h h " "m m m " "a a a " "p p p" ;    
-    align-items: center;      
-    background-color:rgba(235, 228, 247, 0.9);  
-    margin-top: 20px;  
+    grid-template-areas:"h h h " "m m m " "a a a " "p p p" ;   
+    align-items: center;        
+    background-color:rgba(235, 228, 247, 0.9);       
+    justify-items:end;
+    height: 800px;      
 }
 
 .tprodutos img{
    width: 200px;   
   }
-  .tprodutos h1{
+.tprodutos h1{
     text-align: end;
-    margin-right: 30px;
-    
-   } 
+    margin-right: 30px;        
+} 
+.inf-CEP, .input-CEP {
+  display: flex;
+  justify-content: left;  
+  font-size: 120%;
+  align-items:center;  
+  margin: 8px;  
+  
+}
+
+.input-CEP{
+  width: 150px;
+  text-align: left;
+}
+.btn-CEP {
+  font-size: 28px;
+  color: #fff;  
+  background-image:linear-gradient(to right, rgba(213, 200, 233, 0.9), rgba(164, 116, 235, 0.9));
+  cursor: pointer;
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+}
+.valores {  
+  display:none;
+  grid-template-columns: 400px 280px;  
+  gap: 15px;
+  padding-bottom: 50px;
+  
+}
+.valores input[type="radio"]{
+  width: 30px;
+  height: 30px;  
+  cursor: pointer;    
+  
+} 
+
+.cabValores {
+  display:none;
+  grid-template-columns: 400px 280px;  
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
+
+.frete {
+  padding-left: 10px;
+  font-size: 20px;
+  color:blueviolet;  
+  cursor: pointer;
+  display: none;
+  
+}
+.helper-text {
+  display: none;
+  font-size: 20px;
+  color: darkred;
+}
