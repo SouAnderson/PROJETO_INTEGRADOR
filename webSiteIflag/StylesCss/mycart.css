@@ -36,33 +36,67 @@ a#fechar{
   font-size: 60px;  
   color: rgba(54, 30, 93, 0.9);         
 }
-h1#cabProd{
-  text-align: center;
-  font-size: 120%;      
+.tprodutos{  
+  display: grid;
+    grid-template-columns: 1fr 8fr 3fr;
+    grid-template-rows: 12vh 12vh 12vh 12vh;
+    grid-template-areas:"h h h " "m m m " "a a a " "p p p" ;   
+    /* align-items: center;         */
+    background-color:rgba(235, 228, 247, 0.9);       
+    justify-items:end;
+    height: 800px;      
 }
-h1#cabPreco{ 
-  margin-right: 30px;
-  font-size: 150%;
-  
+.tprodutos img{
+  width: 200px;   
  }
+.tprodutos h1{
+   text-align: end;
+   margin-right: 30px;   
+     
+} 
+h3#cabresumo{
+  text-align: left;
+  font-size: 20px;    
+  margin-top: 20px;        
+}
 
-.carrinhoCab h1{
-    text-align: left;
-    font-size: 30px;    
-   }
-.resumo{
+.resumo{  
   width:  30%;
   height: 800px;
   padding-left: 15px;
   margin-left: 15px;  
   margin-right: 15px;
   border-radius: 10px;
-  float:inline-end;  
-   background-color:rgba(235, 228, 247, 0.9);  
-  font-size: 20px;  
-  margin-top: 0px;  
+  float:inline-end;
+  background-color:rgba(235, 228, 247, 0.9);  
+  font-size: 20px;   
 }
-   .mycarrinho{    
+.carrinhoCab h1{
+  text-align: left;
+  font-size: 30px;    
+}
+
+h1#cabProd{
+  text-align:center;    
+  margin-top: 20px;    
+}
+h1#cabPreco{ 
+  margin-right: 30px;  
+  margin-top: 20px; 
+}
+.maisprodutos{
+  font-size: 50px;
+  margin-top: 20px; 
+  display: flex;    
+  cursor: pointer;
+  text-align: end;
+  color: rgba(54, 30, 93, 0.9);  
+  width: 20px;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.mycarrinho{    
     width: 100px;  
     height: 100px;    
     grid-area: i;
@@ -117,7 +151,9 @@ h1#cabPreco{
    }
      
 .totaliza{
-  width: 200px;  
+  display: block;
+  width: 400px;  
+  margin-top: 30px;
 }     
 .pagar{  
     text-align:end;
@@ -138,56 +174,23 @@ h1#cabPreco{
     padding: 10px;
     transform: scale(1);
     transition: transform 0.3s;
-   }
-   .pagar button:hover {
+}
+.pagar button:hover {
     transform: scale(1.1);
   }
-   h3#cabresumo{
-    text-align: left;
-    font-size: 20px;    
-    margin-top: 30px;        
-   }
 
-.maisprodutos{
-  font-size: 60px;
-  display: flex;    
-  cursor: pointer;
-  text-align: end;
-  color: rgba(54, 30, 93, 0.9);  
-  width: 20px;
-  transform: scale(1);
-  transition: transform 0.3s;
-}
-.maisprodutos:hover{
+  .maisprodutos:hover{
   transform: scale(1.1);
 }
-.tprodutos{  
-  display: grid;
-    grid-template-columns: 1fr 8fr 3fr;
-    grid-template-rows: 12vh 12vh 12vh 12vh;
-    grid-template-areas:"h h h " "m m m " "a a a " "p p p" ;   
-    align-items: center;        
-    background-color:rgba(235, 228, 247, 0.9);       
-    justify-items:end;
-    height: 800px;      
-}
 
-.tprodutos img{
-   width: 200px;   
-  }
-.tprodutos h1{
-    text-align: end;
-    margin-right: 30px;        
-} 
 .inf-CEP, .input-CEP {
   display: flex;
   justify-content: left;  
   font-size: 120%;
   align-items:center;  
   margin: 8px;  
- 
-}
 
+}
 
 .input-CEP{
   width: 150px;
@@ -209,11 +212,12 @@ h1#cabPreco{
 }
 .valores {  
   display:none;
-  grid-template-columns: 350px 400px;  
+  grid-template-columns: 190px 400px;  
   gap: 15px;
   padding-bottom: 50px;
 }
 .valores img{
+  cursor: pointer;
   transform: scale(1);
   transition: transform 0.03s;  
 }
@@ -226,20 +230,16 @@ h1#cabPreco{
   cursor: pointer;    
 } 
 
-
-.cabValores {
-  display:none;
-  grid-template-columns: 400px 280px;  
+.cabValores {  
   margin-top: 20px;
   margin-bottom: 20px;  
 }
 
 .frete {
-  padding-left: 10px;
-  font-size: 20px;
-  color:blueviolet;  
-  cursor: pointer;
   display: none;
+  padding-left: 10px;  
+  color:blueviolet;  
+  cursor: pointer;  
   
 }
 .helper-text {
