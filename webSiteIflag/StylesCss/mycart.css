@@ -39,23 +39,23 @@ a#fechar{
 .tprodutos{  
   display: grid;
     grid-template-columns: 1fr 8fr 3fr;
-    grid-template-rows: 12vh 12vh 12vh 12vh;
-    grid-template-areas:"h h h " "m m m " "a a a " "p p p" ;   
-    /* align-items: center;         */
+    grid-template-rows: 8vh 12vh 12vh 12vh;
+    grid-template-areas:"h h h " "m m m " "a a a " "p p p" ;       
     background-color:rgba(235, 228, 247, 0.9);       
     justify-items:end;
+    align-items: center;
     height: 800px;      
 }
 .tprodutos img{
-  width: 200px;   
+  width: 180px;  
+  margin-right: 10px; 
  }
 .tprodutos h1{
    text-align: end;
    margin-right: 30px;   
      
 } 
-h3#cabresumo{
-  text-align: left;
+h3#cabresumo{  
   font-size: 20px;    
   margin-top: 20px;        
 }
@@ -165,7 +165,7 @@ h1#cabPreco{
     background-image:linear-gradient(to right, rgba(54, 30, 93, 0.9), rgba(182, 154, 228, 0.9));
     color: #fff;
     border-radius: 10px;
-    width: 250px;
+    width: 200px;
     cursor: pointer;
     padding: 5px;
     margin-top: 30px;
@@ -233,6 +233,7 @@ h1#cabPreco{
 .cabValores {  
   margin-top: 20px;
   margin-bottom: 20px;  
+  display: none;
 }
 
 .frete {
@@ -240,10 +241,10 @@ h1#cabPreco{
   padding-left: 10px;  
   color:blueviolet;  
   cursor: pointer;  
-  
 }
 .helper-text {
   display: none;
   font-size: 20px;
   color: darkred;
+  margin-top: 10px;
 }
