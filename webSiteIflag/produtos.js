@@ -23,7 +23,7 @@ function filtraCard(itemClass){
 }
 
 let filtro = document.querySelectorAll(".menu li p")
-let container = document.querySelectorAll("#teste section")
+let container = document.querySelectorAll("#cards-produtos section")
 let removeFiltro = document.querySelector("#remove-filtro")
 
 
