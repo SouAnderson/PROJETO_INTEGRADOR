@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
-  
+  color: rgba(54, 30, 93, 0.9)
 }
 header {
   background: rgba(54, 30, 93, 0.9);
@@ -14,6 +14,9 @@ header {
 }
 
 .mycart{
+  width: 100%;
+  justify-content: space-between;
+  height: auto;
   padding-left: 15px;
   margin-left: 15px;
   margin-top: 8px;
@@ -29,7 +32,7 @@ header {
 
   .carrinhoCab{
   display: flex;
-  justify-content:space-between ;
+  justify-content:space-between;
   align-items:center;
   margin-bottom: 12px;  
   padding: 0px 2.6rem;
@@ -41,26 +44,39 @@ a#fechar{
   font-size: 150%;
   color: rgba(54, 30, 93, 0.9);
 }
+.tprodutos-cab{
+  display:flex;   
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
 .tprodutos{
-  display: grid;
-    grid-template-columns: 1fr 8fr 3fr;
-    grid-template-rows: 8vh 12vh 12vh 12vh;
+   display: grid;
+    grid-template-columns: 2fr 12fr 1fr 3fr;
+    grid-template-rows: 8vh 8vh 8vh 8vh;
     grid-template-areas:"h h h " "m m m " "a a a " "p p p" ;
     /* background-color:rgba(235, 228, 247, 0.9);        */
-    justify-items:end;
+    justify-items:left;    
     align-items: center;
-    /* height: 800px; */
+    column-gap: 20px;
+    margin-left: 10px;
+    height: 490px; 
 
 }
 .tprodutos img{
-  width: 100%;
+  width: 80px;
   margin-right: 10px;  
  }
-.tprodutos h1{
+.tprodutos h2{
+  width: 100%;
   font-size: 100%;
-   text-align: end;
-   margin-right: 30px;
-
+  text-align: left;
+  
+   
+}
+.vTotal h1{
+  text-align: end;
+  margin-bottom: 60px; 
+  margin-left: 120px;
 }
 h3#cabresumo{
   font-size: 100%;
@@ -83,19 +99,19 @@ h3#cabresumo{
     height: 2px;
   background-image: linear-gradient(to right, rgba(54, 30, 93, 0.9), rgba(182, 170, 202, 0.9), rgba(0, 0, 0, 0));
 }
-.carrinhoCab h1{
+.carrinhoCab h2{
   text-align: left;
   font-size: 100%;
 }
 
-h1#cabProd{
-  text-align:center;
+h1#cabProd{  
+  text-align:left;
   margin-top: 20px;
   font-size: 120%;
 }
 h1#cabPreco{
   font-size: 120%;
-  margin-right: 30px;
+  margin-right: 10px;
   margin-top: 20px;
 }
 .maisprodutos{
@@ -126,13 +142,13 @@ h1#cabPreco{
    .fa-trash:hover {
     transform: scale(1.2);
    }
-  .stepper-input{
-    text-align: end;
-    width: 110%;
+  .stepper-input{    
+    width: 150px;       
+    
   }
   .stepper-input input{
-    font-size: 110%;
-    padding: 0.5em;
+    font-size: 100%;
+    padding: 0.5em;    
   }
    .stepper-input .btn {
     cursor: pointer;
@@ -149,14 +165,7 @@ h1#cabPreco{
     border: transparent;
     height: 50px;
   }
-  .btn-right {
-    border-radius: 0 10px 10px 0;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .btn-left {
-    border-radius: 10px 0 0 10px;
-  }
+ 
    .resumo label{
     font-size: 100%;
     margin-right: 2%;
@@ -170,7 +179,7 @@ h1#cabPreco{
   margin-top: 10px;
 }
 .pagar{
-    text-align:end;
+    text-align:center;
     display: none;
 
 }
@@ -189,7 +198,7 @@ h1#cabPreco{
     padding: 15px;    
     transform: scale(1);
     transition: transform 0.3s;
-    margin-right: 30px;
+    
 }
 .pagar button:hover {
     transform: scale(1.1);
@@ -271,4 +280,9 @@ h1#cabPreco{
   font-size: 20px;
   color: darkred;
   margin-top: 10px;
+}
+@media (max-width: 768px){
+  .vTotal h1{            
+    margin-left: -12px;
+  }
 }
