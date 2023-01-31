@@ -15,7 +15,7 @@ let valorFrete = 0;
 
 // Criando constantes objetos para os produtos
 const prod1 = { indice:1, imagem:"../webSiteIflag/img/P1.jpg",
-descricao:"Notebook Acer 8gb RAM SSD 250gshds ajkdhsahdkjashdkja shdkjashdkjhsak jdhaskdhweur oiwuroiweuroiwue riouweorjfclks djfklsdjflksdjf lksdjflkjd",
+descricao:"Notebook Acer 8gb RAM SSD 250",
 quantidade:1,
 preco:2900.00};
 insereProdutoHtml(prod1);
