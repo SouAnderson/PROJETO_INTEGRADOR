@@ -1,11 +1,12 @@
-// verifica tamanho da tela e modifica propriedades
-window.addEventListener("resize", function() {
-    if (window.matchMedia("(min-width: 1200px)").matches) {
-        document.body.style.fontSize = "90%";            
-    } else {        
-        document.body.style.fontSize = "70%";       
-    }
-});
+  //verifica tamanho da tela e modifica propriedades
+  window.addEventListener("resize", function() {
+      if (window.matchMedia("(min-width: 1200px)").matches) {
+          document.body.style.fontSize = "100%";            
+      } else {        
+          document.body.style.fontSize = "70%";                
+      }
+  });
+
 
 //Define a variável do total geral
 let totalGeral = 0;
@@ -66,8 +67,8 @@ btnMyCEP.addEventListener("click",()=>{
     if(inputMyCEP.value.length > 8 ){
         desmarcaRadios();        
         ajuda.style.display="none"; 
-        pagar.style.display="grid";
-        valores.style.display="grid";
+        pagar.style.display="block";
+        valores.style.display="flex";
         cabValores.style.display="grid";  
         
     }else{
@@ -80,7 +81,7 @@ btnMyCEP.addEventListener("click",()=>{
 
 // Função para adicionar produtos ao HTML
 function insereProdutoHtml(objeto){ 
-document.querySelector(".tprodutos").insertAdjacentHTML("beforeend", `<div class="img${objeto.indice}"><img  src='${objeto.imagem}'</div>`);
+document.querySelector(".tprodutos").insertAdjacentHTML("beforeend", `<div class="img${objeto.indice}"><img src="${objeto.imagem}"></img></div>`);
 // Inserindo o componentes: Botões e Imput 
 document.querySelector(".tprodutos").insertAdjacentHTML("beforeend", `<div class="desc${objeto.indice}"><h2>${prod1.descricao}</h2> 
                     <div class="stepper-input">

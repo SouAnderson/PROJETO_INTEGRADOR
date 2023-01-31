@@ -2,123 +2,137 @@
 
 * {
   margin: 0;
-  padding: 0;   
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  
+}
+header {
+  background: rgba(54, 30, 93, 0.9);
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos para telas menores que 768px */
-@media (min-width: 768px) {
-  body {
-      font-size: 70%;     
-  }
-}
-
-/* Estilos para telas maiores que 1200px */
-@media (min-width: 1200px) {
-  body {
-      font-size: 100%;    
-  }
-}
-.mycart{  
+.mycart{
   padding-left: 15px;
   margin-left: 15px;
   margin-top: 8px;
   margin-right: 10px;
-  border-radius: 10px;   
+  border-radius: 10px;
+  color: rgba(54, 30, 93, 0.9);
 }
-.carrinhoCab{
+  .hr-3d {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(54, 30, 93, 0.9), rgba(0, 0, 0, 0));
+  }
+
+  .carrinhoCab{
   display: flex;
   justify-content:space-between ;
   align-items:center;
-  margin-bottom: 12px;
-  padding: 0 2.6rem;       
+  margin-bottom: 12px;  
+  padding: 0px 2.6rem;
  }
-a#fechar{    
-  font-size: 60px;  
-  color: rgba(54, 30, 93, 0.9);         
+ .carrinhoCab img{
+  margin-top: 2px;
+ }
+a#fechar{
+  font-size: 150%;
+  color: rgba(54, 30, 93, 0.9);
 }
-.tprodutos{  
+.tprodutos{
   display: grid;
     grid-template-columns: 1fr 8fr 3fr;
     grid-template-rows: 8vh 12vh 12vh 12vh;
-    grid-template-areas:"h h h " "m m m " "a a a " "p p p" ;       
-    background-color:rgba(235, 228, 247, 0.9);       
+    grid-template-areas:"h h h " "m m m " "a a a " "p p p" ;
+    /* background-color:rgba(235, 228, 247, 0.9);        */
     justify-items:end;
     align-items: center;
-    height: 800px;      
+    /* height: 800px; */
+
 }
 .tprodutos img{
-  width: 180px;  
-  margin-right: 10px; 
+  width: 100%;
+  margin-right: 10px;  
  }
 .tprodutos h1{
+  font-size: 100%;
    text-align: end;
-   margin-right: 30px;   
-     
-} 
-h3#cabresumo{  
-  font-size: 20px;    
-  margin-top: 20px;        
+   margin-right: 30px;
+
+}
+h3#cabresumo{
+  font-size: 100%;
+  margin-top: 20px;
 }
 
-.resumo{  
-  width:  30%;
-  height: 800px;
+.resumo{
+  width: 30%;
+  /* height: 800px; */
   padding-left: 15px;
-  margin-left: 15px;  
+  margin-left: 15px;
   margin-right: 15px;
   border-radius: 10px;
   float:inline-end;
-  background-color:rgba(235, 228, 247, 0.9);  
-  font-size: 20px;   
+  /* background-color:rgba(235, 228, 247, 0.9);   */
+  /* font-size: 20px; */
+}
+.resumo hr{
+  border: 0;
+    height: 2px;
+  background-image: linear-gradient(to right, rgba(54, 30, 93, 0.9), rgba(182, 170, 202, 0.9), rgba(0, 0, 0, 0));
 }
 .carrinhoCab h1{
   text-align: left;
-  font-size: 30px;    
+  font-size: 100%;
 }
 
 h1#cabProd{
-  text-align:center;    
-  margin-top: 20px;    
+  text-align:center;
+  margin-top: 20px;
+  font-size: 120%;
 }
-h1#cabPreco{ 
-  margin-right: 30px;  
-  margin-top: 20px; 
+h1#cabPreco{
+  font-size: 120%;
+  margin-right: 30px;
+  margin-top: 20px;
 }
 .maisprodutos{
   font-size: 50px;
-  margin-top: 20px; 
-  display: flex;    
+  margin-top: 20px;
+  display: flex;
   cursor: pointer;
   text-align: end;
-  color: rgba(54, 30, 93, 0.9);  
+  color: rgba(54, 30, 93, 0.9);
   width: 20px;
   transform: scale(1);
   transition: transform 0.3s;
 }
 
-.mycarrinho{    
-    width: 100px;  
-    height: 100px;    
+.mycarrinho{
+    width: 60px;
+    height: 60px;
     grid-area: i;
    }
-   .fa-trash {         
+   .fa-trash {
     color: rgba(54, 30, 93, 0.9);
-    cursor:pointer;        
-    margin-left: 12px;     
+    cursor:pointer;
+    margin-left: 12px;
     font-size: 40px;
     transform: scale(1);
     transition: transform 0.3s;
    }
-   .fa-trash:hover { 
+   .fa-trash:hover {
     transform: scale(1.2);
    }
   .stepper-input{
-    text-align: end;  
-    width: 110%;      
+    text-align: end;
+    width: 110%;
   }
   .stepper-input input{
-    font-size: 20px;     
-    padding: 0.5em;   
+    font-size: 110%;
+    padding: 0.5em;
   }
    .stepper-input .btn {
     cursor: pointer;
@@ -126,10 +140,10 @@ h1#cabPreco{
     color: #fff;
     background-color:  rgba(54, 30, 93, 0.9);
     border: 1px solid  rgba(54, 30, 93, 0.9);
-    font-size: 20px;
+    font-size: 110%;
   }
   .stepper-input .btnt {
-    cursor: pointer;  
+    cursor: pointer;
     position: absolute;
     background-color: transparent;
     border: transparent;
@@ -144,36 +158,38 @@ h1#cabPreco{
     border-radius: 10px 0 0 10px;
   }
    .resumo label{
-    font-size: 30px;
+    font-size: 100%;
     margin-right: 2%;
     margin: 8px;
     margin-bottom: 15px;
    }
-     
+
 .totaliza{
   display: block;
-  width: 400px;  
-  margin-top: 30px;
-}     
-.pagar{  
+  width: 600px;
+  margin-top: 10px;
+}
+.pagar{
     text-align:end;
     display: none;
-} 
+
+}
+.pagar button img{
+  margin-top: 2px;  
+
+}
 .pagar button{
-    font-size: 100%;    
-    text-align: center;
+    font-size: 100%;
+    text-align:center;
     background-image:linear-gradient(to right, rgba(54, 30, 93, 0.9), rgba(182, 154, 228, 0.9));
     color: #fff;
     border-radius: 10px;
-    width: 200px;
+    width: 150px;
     cursor: pointer;
-    padding: 5px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-right: 30px;
-    padding: 10px;
+    padding: 15px;    
     transform: scale(1);
     transition: transform 0.3s;
+    margin-right: 30px;
 }
 .pagar button:hover {
     transform: scale(1.1);
@@ -185,62 +201,70 @@ h1#cabPreco{
 
 .inf-CEP, .input-CEP {
   display: flex;
-  justify-content: left;  
+  flex-wrap: wrap;
+  justify-content: left;
   font-size: 120%;
-  align-items:center;  
-  margin: 8px;  
+  align-items:center;
+  margin: 6px;
 
 }
 
 .input-CEP{
   width: 150px;
   text-align: left;
+  font-size: 120%;
 }
 .btn-CEP {
   font-size: 28px;
-  color: #fff;  
+  color: #fff;
   background-image:linear-gradient(to right, rgba(213, 200, 233, 0.9), rgba(164, 116, 235, 0.9));
   cursor: pointer;
-  width: 80px;
-  height: 60px;
+  width: 60px;
+  height: 40px;
   border-radius: 10px;
   transform: scale(1);
-  transition: transform 0.3s ;
+  transition: transform 0.3s ;  
 }
 .btn-CEP:hover{
   transform: scale(1.1);
 }
-.valores {  
+.valores {
   display:none;
-  grid-template-columns: 190px 400px;  
-  gap: 15px;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-bottom: 20px;
+  font-size: 150%;
+}
+.valores > div {
+    flex: 1 1 200px;
+
 }
 .valores img{
   cursor: pointer;
   transform: scale(1);
-  transition: transform 0.03s;  
+  transition: transform 0.03s;
 }
 .valores img:hover{
   transform: scale(1.2);
 }
 .valores input[type="radio"]{
   width: 30px;
-  height: 30px;  
-  cursor: pointer;    
-} 
+  height: 30px;
+  cursor: pointer;
+}
 
-.cabValores {  
+.cabValores {
   margin-top: 20px;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
   display: none;
 }
 
 .frete {
   display: none;
-  padding-left: 10px;  
-  color:blueviolet;  
-  cursor: pointer;  
+  padding-left: 10px;
+  color:blueviolet;
+  cursor: pointer;
+  
 }
 .helper-text {
   display: none;

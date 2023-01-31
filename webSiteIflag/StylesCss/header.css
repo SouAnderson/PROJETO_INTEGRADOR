@@ -129,11 +129,11 @@ ul {
   border-bottom: 2px solid #FF6422;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 768px) {
   .container{
     margin: auto;
     width: 100%;
-    height: 39vmin;
+    height: 30vmin;
   }
 
   img {
