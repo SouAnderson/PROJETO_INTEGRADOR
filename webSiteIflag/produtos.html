@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Anderson Santos">
+  <link rel="stylesheet" href="./StylesCss/header.css">
+  <link rel="stylesheet" href="./StylesCss/sectionHomeCard.css">
+  <link rel="stylesheet" href="./StylesCss/article.css">
+  <link rel="stylesheet" href="./StylesCss/sectionFollow.css">
+  <link rel="stylesheet" href="./StylesCss/sectionLinks.css">
+  <link rel="stylesheet" href="./StylesCss/footer.css">
+  <link rel="stylesheet" href="./StylesCss/areaProdutos.css">
+  <script src="./produtos.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Produtos</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="headerNav">
+        <ul class="headerNavMenu">
+          <li>
+            <a class="header-icon" href="./login.html" id="hIcon" title="login">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <a class="header-icon" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logoContainer">
+          <a href="./homePage.html">
+        <img src="./img/logo.jpg">
+</a>
+      </div>
+      <div class="searchContainer">
+        <form>
+          <input type="text" id="search" name="search" placeholder="search...">
+          <a onclick="send()" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </form>
+        <div class="linksNav">
+          <a href="./register.html">Cadastre-se aqui!</a>
+          <a href="#">Catálago de Produtos</a>
+          <a href="./about.html">Quem Somos</a>
+
+          <a href="./mylists.html" target="_blank">Minha Lista!</a>
+        </div><br><br>
+      </div>
+    </div>
+  </header>
+
+      <section class="section-main">
+        <section class="menu-filtros">
+            <div>
+                <ul class="menu">
+                   <li><h3>Categorias</h3></li>
+                    <li><p>Notebooks</p></li>
+                    <li><p>Teclados</p></li>
+                    <li><p>Mouses</p></li>
+                    <li><p>Fones</p></li>
+                    <li><p>Placas de video</p></li>
+              </ul>
+            </div>
+
+            <button id="remove-filtro">Remover Filtro</button>
+
+        </section>
+
+        <section id = "cards-produtos" class="cards-produtos">
+
+            <section class="card notebook">
+                <div class="image-card">
+                    <img src="./img/P1.jpg">
+                </div>
+
+                <div class="text-card">
+                    <p id="valor">R$ 2.900,00</p><br>
+                    <p>Notebook Acer 8gb RAM SSD 250gb</p>
+                </div>
+
+                <div class="button">
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </section>
+
+            <section class="card notebook">
+                <div class="image-card">
+                    <img src="./img/NP2.jpg">
+                </div>
+
+                <div class="text-card">
+                    <p id="valor">R$ 2.199,00</p><br>
+                    <p>Notebook Ultra 8gb RAM HD 1TERA</p>
+                </div>
+
+                <div class="button">
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </section>
+
+            <section class="card notebook">
+                <div class="image-card">
+                    <img src="./img/NP3.jpg">
+                </div>
+
+                <div class="text-card">
+                    <p id="valor">R$ 4.900,00</p><br>
+                    <p>Notebook Acer 16gb RAM SSD 500gb</p>
+                </div>
+
+                <div class="button">
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </section>
+
+            <section class="card teclado">
+                <div class="image-card">
+                    <img src="./img/NP4.jpg">
+                </div>
+
+                <div class="text-card">
+                    <p id="valor">R$ 80,00</p><br>
+                    <p>Teclado sem fio</p>
+                </div>
+
+                <div class="button">
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </section>
+
+            <section class="card teclado">
+                <div class="image-card">
+                    <img src="./img/NP5.jpg">
+                </div>
+
+                <div class="text-card">
+                    <p id="valor">R$ 129,99</p><br>
+                    <p>Teclado Gamer RGB</p>
+                </div>
+
+                <div class="button">
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </section>
+
+            <section class="card mouse">
+                <div class="image-card">
+                    <img src="./img/NP9.jpg">
+                </div>
+
+                <div class="text-card">
+                    <p id="valor">R$ 99,00</p><br>
+                    <p>Mouse sem fio Multilaser</p>
+                </div>
+
+                <div class="button">
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </section>
+
+            <section class="card fone">
+                <div class="image-card">
+                    <img src="./img/NP6.jpg">
+                </div>
+
+                <div class="text-card">
+                    <p id="valor">R$ 250,00</p><br>
+                    <p>Fone Philips blueouth</p>
+                </div>
+
+                <div class="button">
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </section>
+
+            <section class="card fone">
+                <div class="image-card">
+                    <img src="./img/NP7.jpg">
+                </div>
+
+                <div class="text-card">
+                    <p id="valor">R$ 320,00</p><br>
+                    <p>Fone JBL bluetouth</p>
+                </div>
+
+                <div class="button">
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </section>
+
+            <section class="card placa-video">
+                <div class="image-card">
+                    <img src="./img/NP8.jpg">
+                </div>
+
+                <div class="text-card">
+                    <p id="valor">R$ 1.200,00</p><br>
+                    <p>Placa de vídeo Fighter 4gb DDR5</p>
+                </div>
+
+                <div class="button">
+                    <button>ADICIONAR AO CARRINHO</button>
+                </div>
+
+            </section>
+
+        </section>
+
+    </section>
+
+  <script src="https://kit.fontawesome.com/53d15467bd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
