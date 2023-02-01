@@ -12,7 +12,7 @@ header {
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-a {
+ a {
   color: #fff;
   text-decoration: none;
 }
@@ -22,17 +22,15 @@ ul {
 }
 
 .container {
-  height: 20vmin;
+  height: 32vmin;
 }
 
 /* Nav */
-
 .headerNav {
   display: flex;
   align-items: center;
-  justify-content: end;
-  height: 60px;
-  padding: 20px 0;
+  justify-content: end;  
+  padding: 15px 0;
   font-size: 20px;
   margin-right: 18px;
 }
@@ -43,9 +41,10 @@ ul {
   justify-content: end;
   flex-direction: row;
 }
+
 .headerNavMenu  a {
-  font-size: 20px;
-  margin-left: 6px; 
+  font-size: 22px;
+  margin-left: 10px; 
 }
 
 .headerNav  ul li a:hover {
@@ -59,7 +58,7 @@ ul {
 }
 
 .logoContainer img {
-  margin-top: -50px;
+  margin-top: -55px;
   width: 300px;
 }
 
@@ -112,8 +111,7 @@ ul {
 }
 
 .linksNav a:hover {
-  opacity: 0.9;
-  border-bottom: 2px solid #FF6422;
+  border-bottom: 3px solid #FF6422;
 }
 
 @media(max-width: 500px) {
@@ -152,5 +150,3 @@ ul {
   }
 
 }
-
-
