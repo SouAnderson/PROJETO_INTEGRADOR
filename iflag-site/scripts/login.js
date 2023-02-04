@@ -9,6 +9,7 @@ function
       email.focus();
       return;
     }
+  
     if (password.value.length <= 5 || password.value == "") {
       alert("Senha não informada. A senha deve ter mais do que 5 carateres.");
       password.focus();
