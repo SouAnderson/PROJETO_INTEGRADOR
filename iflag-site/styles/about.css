@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --primary-color: rgba(54, 30, 93, 0.9);
+  --second-color: #f76a2ed8;
+  --third-color: #fff;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 180px;
+}
+
+.card {
+  background-color: rgba(54, 30, 93, 0.9);
+  ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  margin: 6% auto;
+  text-align: center;
+  width: 350px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+#img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+
+.card h1,
+p {
+  margin-top: 18px;
+  color: var(--second-color);
+  font-weight: 500;
+}
+
+.title {
+  margin-top: 14px;
+  color: darkgray;
+  font-size: 18px;
+}
+
+.card-link-nav {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.iCard {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--third-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 5px 0;
+}
+
+.iCard:hover {
+  color: darkgray;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #fff;
+  background-color: #FF6422;
+  text-align: center;
+  cursor: pointer;
+  width: 59%;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: rgb(253, 141, 3);
+}
+
+@media(max-width: 600px) {
+  .card-section {
+    margin: 32px auto;
+    gap: 28px;
+  }
+
+  .card {
+    padding-top: 80px;
+  }
+
+  #img {
+    max-width: 100%;
+  }
+
+  .text-about {
+    max-width: 100%;
+    padding: 0 18px;
+  }
+
+}

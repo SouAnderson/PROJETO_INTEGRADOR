@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Antonio Landim">
+ 
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/sectionHomeCard.css">
+  <link rel="stylesheet" href="../styles/article.css">
+  <link rel="stylesheet" href="../styles/sectionFollow.css">
+  <link rel="stylesheet" href="../styles/sectionLinks.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../Styles/mycart.css"> 
+  <title>IflagHomePage</title>
+ 
+  <script src="../scripts/script-carrinho.js" defer></script>
+  <body>
+  <header>
+    <div class="container">
+      <nav class="headerNav">
+        <ul class="headerNavMenu">
+          <li>
+            <a class="header-icon" href="./login.html" id="hIcon" title="login">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <!-- <a class="header-icon" href="/pages/carrinho.html">
+              <i class="fas fa-shopping-cart"></i> -->
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logoContainer">
+          <a href="./home.html">
+        <img src="../img/logo.jpg">
+</a>
+      </div>
+      <div class="searchContainer">
+        <form>
+          <input type="text" id="search" name="search" placeholder="search ...">
+          <a onclick="send()" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </form>
+        <div class="linksNav">
+          <a href="./register.html">Cadastre-se aqui!</a>
+          <a href="./produtos.html">Catálago de Produtos</a>
+          <a href="./about.html">Quem Somos</a>
+          <a href="mylists.html">Minha Lista!</a>
+        </div><br><br>
+      </div>
+    </div>
+  </header>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <section class="mycart">
+        <div class="carrinhoCab">    
+            <img src="../img/Carrinho.png" class="mycarrinho" alt="Carrinho de Compras">
+            <h1>Meu carrinho de compras</h1>   
+            <a id="fechar" href="../pages/home.html" >
+              <i class="fas fa-reply-all"></i>  Voltar 
+            </a>                                                                           
+        </div>    
+        <div>
+          <hr class="hr-3d" Align="left" width="100%">
+        </div>    
+        <aside class="resumo">                   
+          <div>
+              <h3 id="cabresumo">Resumo do pedido</h3>              
+              <hr size="1" Align="left" width="100%"></h3>              
+          </div>
+          <p id="cep-helper" class="helper-text"> O CEP está incorreto!</p>
+          <div class="inf-CEP">
+            
+            <label for="cep" class="lbl-CEP">*Digite seu CEP</label>            
+            <input class="input-CEP" type="text" id="cep" name="cep"  oninput="maskCEP(this)" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000">            
+            <br>
+            <button class="btn-CEP"style="border-radius: 5px; background-color: purple;">OK</button>
+            <br>
+            
+          </div>
+          <div class="cabValores">
+            <div>
+              <label for="delivery">Formas de entrega</label>  
+            </div>           
+          </div>
+          <div class="valores">
+            <div>
+              <input type="radio"  id="transportadora" name="delivery" value="transportadora" onclick="verificaTransporte(this,20)">
+              <label for="transportadora"><img src="../img/transportadora.png"></label>
+            </div>
+            <div>
+              <label class="frete frete-transportadora"> 4 dias* - R$ 20,00</label>
+            </div>   
+            <div>
+              <input type="radio" checked="false" id="fedex" name="delivery" value="fedex" onchange="verificaTransporte(this,23)">
+              <label for="fedex"><img src="../img/fedex.png"></label>  
+            </div>
+            <div>            
+              <label class="frete frete-fedex">  5 dias* - R$ 23,00</label>
+            </div>
+            <div>
+              <input type="radio" checked="false"  id="correios" name="delivery" value="correios" onchange="verificaTransporte(this,42)">
+              <label for="correios"><img src="../img/correios.png"></label>
+            </div>
+            <div>
+              <label class="frete frete-correios" >4 dias* - R$ 42,00</label>
+            </div>  
+            <div>
+              <input type="radio" checked="false"  id="jamef" name="delivery" value="jamef" onchange="verificaTransporte(this,62)">
+              <label for="jamef"><img src="../img/jamef.png"></label>
+            </div>
+            <div >
+              <label class="frete frete-jamef" > 3 dias* - R$ 62,00</label>
+            </div>    
+            <div class="totaliza">
+            <div>
+              <label class="valor-frete" >Frete:</label>
+            </div>    
+            <br>          
+            <div>
+              <label class="total-prod" >Total geral:</label>
+            </div>                    
+          </div>                         
+          </div>
+          </div>   
+                       
+          <div class="pagar"> 
+            <a href="#"><button name="btn_paga">Pagar  <br> <div> <img src="../img/compra-segura.png" width="50%" ></div> </button></a></td></td></td></td></td>
+          </div>
+        </aside>   
+        <div class="tprodutos-cab">                    
+              <div>     
+                <h1 id="cabProd">Produtos</h1>   
+              </div>   
+              <div></div>                           
+              <div></div>
+              <div>                                           
+                <a class="maisprodutos" href="#">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </a>                                                         
+             </div>  
+             <div>
+              <h1 id="cabPreco">Preço</h1>              
+             </div>  
+                                                                                                       
+          </div>            
+      </section>   
+      <section>
+        <div class="tprodutos">
+          <!-- produtos inseridos dinamicamente -->
+        </div>
+      </section>          
+   <section></section>
+  <!-- -------------------------------------------------------------------------------------------------------- -->   
+ </body><!-- esse é o atual -->
+<script src="./app.js"></script>
+<script src="https://kit.fontawesome.com/53d15467bd.js" crossorigin="anonymous"></script>
+
+</html>

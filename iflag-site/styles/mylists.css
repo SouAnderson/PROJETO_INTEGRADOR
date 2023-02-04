@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --primary-color: rgba(54, 30, 93, 0.9);
+  --second-color: #f76a2ed8;
+  --third-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.list-section {
+  padding-bottom: auto;
+  margin-bottom: 200px;
+}
+
+.list-title {
+  margin: 40px 0 -18px 0;
+  color: rgb(253, 141, 3);
+  font-size: 2.8em;
+  text-align: center;
+  font-weight: 500;
+}
+
+.list-section ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 520px;
+  max-width: 100%;
+}
+
+.list-section ul li {
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  padding: 12px 0 12px 40px;
+  background: #FF6422;
+  color: var(--third-color);
+  font-size: 18px;
+  transition: 0.2s;
+  width: 524px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checked li {
+  color: #fff;
+  gap: 300px;
+}
+
+.list-section ul li:nth-child(odd) {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.list-section ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+  max-width: 100%;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 42px 12px 0;
+}
+
+.header {
+  border-radius: 8px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.8);
+  background-color: var(--primary-color);
+  padding: 40px 40px;
+  width: 520px;
+  color: white;
+  text-align: center;
+
+  margin: 50px auto 10px auto;
+
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.list-section input {
+  text-align: center;
+  margin: 0;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  background: #FF6422;
+  color: var(--third-color);
+  float: left;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 200;
+  cursor: pointer;
+  transition: 0.3s;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.addBtn:hover {
+  background-color: rgb(253, 141, 3);
+  font-weight: 500;
+}
+
+@media(max-width: 800px) {
+
+  .header {
+    max-width: 100%;
+    width: 407px;
+  }
+
+  .list-section ul li,
+  .list-section ul li:nth-child(odd) .list-section ul {
+    max-width: 100%;
+    width: 84%;
+    margin: 0 auto;
+  }
+
+}
