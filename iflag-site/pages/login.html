@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Fernando HBS">
-  <link rel="stylesheet" href="../styles/form.css">
+  <link rel="stylesheet" href="../styles/login.css">
   <title>Login-Iflag</title>
 </head>
 
@@ -16,26 +16,25 @@
     <a href="/pages/home.html">
       <img src="../img/logo.jpg">
     </a>
-
-    <form>
+    <form autocomplete="off">
       <input type="email" id="email" class="input" placeholder="E-mail:">
-
-      <input type="password" id="password" class="input" placeholder="Password:">
-
-      <button type="button" onclick="
-validate()" class="input" id="btnSubmit">
+      <small id="emailText"></small>
+      <input type="password" id="password" class="input" placeholder="Senha:">
+      <small id="passwordText"></small>
+      <button type="submit" class="input" id="btnSubmit">
         Enviar
       </button>
-
+      <small id="formText"></small>
     </form>
-    <span>Você não é cadastrado?</span>
-    <span>
-      <a href="/pages/register.html">
-        Clique aqui para se cadastrar!
-      </a>
-    </span>
+    <div class="spansContainer">
+      <span>Você não é cadastrado?</span>
+      <span>
+        <a href="/pages/register.html">
+          Clique aqui para se cadastrar!
+        </a>
+      </span>
+    </div>
   </div>
-
   <script src="../scripts/login.js"></script>
 </body>
 
