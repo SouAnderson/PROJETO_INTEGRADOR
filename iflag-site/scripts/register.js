@@ -1,32 +1,97 @@
-function 
- validate() {
+let userName = document.getElementById('name');
+let userEmail = document.getElementById('email');
+let userPassword = document.getElementById('password');
+let userPhone = document.getElementById('userPhone');
+let form = document.querySelector("form");
+let nameText = document.getElementById('nameText');
+let emailText = document.getElementById('emailText');
+let passwordText = document.getElementById('passwordText');
+let phoneText = document.getElementById('phoneText');
+let formText = document.getElementById('formText');
 
-    let name = document.getElementById("name");
-    let email = document.getElementById("email");
-    let password = document.getElementById("password");
-    let phone = document.getElementById("phone");
-    
-    if (name.value == "" || name.value.length <= 2) {
-      alert("Nome não informado. Preencha todos os campos para se cadastrar.");
-      name.focus();
-      return;
+form.addEventListener("submit", (e) => {
+    if (userName.value == '' || userEmail.value == '' && userPassword.value == '' && userPhone.value == '') {
+        formText.style.color = '#fff'
+        formText.style.fontSize = '0.9em'
+        formText.textContent = 'Preencha todos os campos para se cadastrar.'
+    } else if (
+        nameValidate(userName.value) === true ||
+        emailValidate(userEmail.value) === true &&
+        passwordValidate(userPassword.value) === true &&
+        phoneValidate(userPhone.value) === true
+    ) {
+
+        nameText.textContent = '';
+        emailText.textContent = '';
+        passwordText.textContent = '';
+        phoneText.textContent = '';
+        console.log(userName.value);
+        console.log(userEmail.value);
+        console.log(userPassword.value);
+        console.log(userPhone.value);
+
+        alert("Sucesso! Você será redirecionado para a página de Login!");
+        location.href = "/pages/login.html"
+      
+    } else {
+        console.log('Requisição não enviada.')
     }
-    if (email.value == "" ||  email.value.length <= 10 || email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
-      alert("E-mail inválido.");
-      email.focus();
-      return;
+
+    e.preventDefault();
+})
+
+userName.addEventListener('keyup', () => {
+    if (nameValidate(userName.value) !== true) {
+        nameText.textContent = 'Nome inválido.'
+    } else {
+        nameText.textContent = '';
     }
-    if (password.value.length <= 5 || password.value == "") {
-      alert("Senha não informada. A senha deve ter mais do que 5 carateres.");
-      password.focus();
-      return;
+})
+
+userEmail.addEventListener('keyup', () => {
+    if (emailValidate(userEmail.value) !== true) {
+        emailText.textContent = 'O e-mail deve ser; Ex: abc@abc.com'
+    } else {
+        emailText.textContent = '';
     }
-    if (phone.value.length <= 11  || phone.value == "") {
-      alert("Telefone não informado. Insira o DDD e o número do seu telefone.");
-      phone.focus();
-      return;
+})
+
+userPassword.addEventListener('keyup', () => {
+    if (passwordValidate(userPassword.value) !== true) {
+        passwordText.textContent =
+            "A senha dever ter no mínimo seis caracteres, um caractere especial, um número, uma letra maiscúla e uma letra minúscula."
+    } else {
+        passwordText.textContent = '';
     }
-    alert("Sucesso! Você será redirecionado para a página de Login!");
-    location.href = "/pages/login.html"
-    return false;
-  }
+})
+
+userPhone.addEventListener('keyup', () => {
+    if (phoneValidate(userPhone.value) !== true) {
+        phoneText.textContent = 'Telefone inválido.'
+    } else {
+        phoneText.textContent = '';
+    }
+})
+
+function nameValidate(userName) {
+    let patternName = /^[A-Z][a-z]* [A-Z][a-z]*$/;
+    return patternName.test(userName)
+}
+
+function emailValidate(userEmail) {
+    let patternEmail =
+        /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+    return patternEmail.test(userEmail);
+}
+
+function passwordValidate(userPassword) {
+    let patternPassword =
+        /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    return patternPassword.test(userPassword);
+}
+
+function phoneValidate(userPhone) {
+    let patternPhone =
+        /^\([0-9]{2}\) 9 [0-9]{4}[-][0-9]{4}$/;
+    return patternPhone.test(userPhone);
+}
