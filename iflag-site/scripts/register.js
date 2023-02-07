@@ -25,18 +25,10 @@ form.addEventListener("submit", (e) => {
         emailText.textContent = '';
         passwordText.textContent = '';
         phoneText.textContent = '';
-        console.log(userName.value);
-        console.log(userEmail.value);
-        console.log(userPassword.value);
-        console.log(userPhone.value);
-
+    
         alert("Sucesso! Você será redirecionado para a página de Login!");
-        location.href = "/pages/login.html"
-      
-    } else {
-        console.log('Requisição não enviada.')
-    }
-
+        location.href = "/pages/login.html"   
+    } 
     e.preventDefault();
 })
 
