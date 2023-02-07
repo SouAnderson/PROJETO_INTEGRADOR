@@ -17,14 +17,10 @@ form.addEventListener("submit", (e) => {
     ) {
         emailText.textContent = '';
         passwordText.textContent = '';
-        console.log(userEmail.value);
-        console.log(userPassword.value);
-         
+       
         alert("Sucesso! Você será redirecionado para a página inicial!");
         location.href = "/pages/home.html"    
-    } else {
-        console.log('Requisição não enviada.')
-    }
+    } 
     e.preventDefault();
 })
 
