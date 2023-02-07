@@ -1,25 +1,61 @@
-function 
- validate() {
 
-    let email = document.getElementById("email");
-    let password = document.getElementById("password");
+let userEmail = document.getElementById('email');
+let userPassword = document.getElementById('password');
+let form = document.querySelector("form");
+let emailText = document.getElementById('emailText');
+let passwordText = document.getElementById('passwordText');
+let formText = document.getElementById('formText');
 
-    if (email.value == "" || email.value.length <= 10 || email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
-      alert("E-mail não informado.");
-      email.focus();
-      return;
+form.addEventListener("submit", (e) => {
+    if (userEmail.value == '' && userPassword.value == '') {
+        formText.style.color = '#fff'
+        formText.style.fontSize = '1em'
+        formText.textContent = 'Preencha todos os campos para logar.'
+    } else if ( 
+        emailValidate(userEmail.value) === true &&
+        passwordValidate(userPassword.value) === true
+    ) {
+        emailText.textContent = '';
+        passwordText.textContent = '';
+        console.log(userEmail.value)
+        console.log(userPassword.value)
+         
+        alert("Sucesso! Você será redirecionado para a página inicial!");
+        location.href = "/pages/home.html"    
+    } else {
+        console.log('Requisição não enviada.')
     }
-    if (password.value.length <= 5 || password.value == "") {
-      alert("Senha não informada. A senha deve ter mais do que 5 carateres.");
-      password.focus();
-      return;
+    e.preventDefault();
+})
+
+userEmail.addEventListener('keyup', () => {
+    if (emailValidate(userEmail.value) !== true) {
+        emailText.textContent = 'O e-mail deve ser; Ex: abc@abc.com'
+    } else {
+        emailText.textContent = '';
     }
+})
 
-    alert("Sucesso! Você será redirecionado para a página inicial!");
-    location.href = "/pages/home.html"
-    return false;
-  }
+userPassword.addEventListener('keyup', () => {
+    if (passwordValidate(userPassword.value) !== true) {
+        passwordText.textContent =
+            "A senha dever ter no mínimo seis caracteres, um caractere especial, um número, uma letra maiscúla e uma letra minúscula."
+    } else {
+        passwordText.textContent = '';
+    }
+})
 
+function emailValidate(userEmail) {
+    let patternEmail =
+        /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+    return patternEmail.test(userEmail);
+}
+
+function passwordValidate(userPassword) {
+    let patternPassword =
+        /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    return patternPassword.test(userPassword);
+}
 
 
 
