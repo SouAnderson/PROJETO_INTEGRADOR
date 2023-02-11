@@ -96,7 +96,8 @@ button:hover {
   background-color: rgb(253, 141, 3);
 }
 
-@media only screen and (max-width: 600px) {
+/* Reaponsive */
+@media (max-width: 600px) {
   .card-section {
     margin: 32px auto;
     gap: 28px;
@@ -113,19 +114,5 @@ button:hover {
   }
 }
 
-/* Responsive Mobile */
-@media only screen and (max-width: 432px) {
-    .card-section {
-        display: flex;
-        gap: 28px;
-      }
-      .card {          
-        max-width: 100%;
-        width: 70%;
-        margin: 32px auto;
-      }
-      #img {
-        max-width: 100%;
-      }    
-  }
+
 
