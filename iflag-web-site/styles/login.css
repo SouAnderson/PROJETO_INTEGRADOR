@@ -90,40 +90,18 @@ a:hover {
   cursor: pointer;
 }
 
+/* Responsive  */
 @media (max-width: 770px) {
   form small {
-    width: 88%;
-    margin: 0 auto;
+  width: 88%;
+  margin: 0 auto;
   }
 
   .containerForm img {
-    margin-top: 2px;
-    width: 380px;
+   margin: 0 auto;
+   width: 260px;
+   max-width:100%;
   }
 }
 
-/* Responsive Mobile */
-@media only screen and (max-width: 432px) {
-  form small {
-    width: 78%;
-  }
 
-  .containerForm {
-    margin: -180px auto;
-    max-width: 100%;
-    height: 120vh;
-  }
-
-  .containerForm img {
-    margin: 0 auto;
-    padding: 0 70px;
-    max-width: 100%;
-  }
-
-  .spansContainer {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 7px
-  }
-}
