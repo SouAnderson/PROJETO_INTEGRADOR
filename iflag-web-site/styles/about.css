@@ -96,7 +96,7 @@ button:hover {
   background-color: rgb(253, 141, 3);
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .card-section {
     margin: 32px auto;
     gap: 28px;
