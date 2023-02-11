@@ -151,46 +151,7 @@ ul {
 
 }
 
- /*Responsive Mobile */
-@media only screen and (max-width: 432px) {
-  .container{
-    margin: 0 auto;
-    max-width: 100%;
-    width: 100%;
-    height: 64vmin;
-  }
 
-  img {
-    max-width: 100%;
-  }
-
-  .searchContainer form input{
-     width: 308px;
-     height: 30px;
-   }
-
-   #searchIcon  {
-     cursor: pointer;
-     padding: 6px;
-     border-radius: 8px;
-     background-color: #FF6422;
-     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-   }
-
-  .headerNavMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .linksNav a {
-    text-align: center;
-    margin-top: 15px;  
-    font-size: 0.9rem; 
-  }
-}
 
 
 
