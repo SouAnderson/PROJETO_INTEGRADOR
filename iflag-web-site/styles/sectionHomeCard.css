@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-cards {
+  margin-top: 82px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.home-cards img {
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.home-cards img:hover  {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.home-cards h3 {
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 590;
+  font-size: 1.3rem;
+  color: #FF6422;
+}
+
+.home-cards p {
+  text-align: center;
+  color: rgba(54, 30, 93, 0.9);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+ #cartIcon {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+font-size: 1.3rem;
+color: #FF6422;
+transition: 0.3s;
+}
+
+#cartIcon:hover {
+color: rgba(54, 30, 93, 0.9);
+}
+
+@media(max-width: 500px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 45px auto;
+    box-shadow: none;  
+  }
+
+}
+
+
