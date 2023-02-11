@@ -148,26 +148,3 @@
   }
 }
 
-/* Responsive Mobile */
-@media only screen and (max-width: 432px) {
-  .header {
-    max-width: 100%;
-    width: 340px;
-  }
-  .list-section ul li,
-  .list-section ul li:nth-child(odd) .list-section ul {
-    max-width: 100%;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .addBtn {
-    max-width: 100%;
-    width: 32%;
-    font-size: 1em;
-    margin: 0 auto;
-  }
-  .list-section input {
-    width: 67%;
-    margin: 0 auto;
-  }
-}
