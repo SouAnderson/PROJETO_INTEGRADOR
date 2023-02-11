@@ -79,15 +79,5 @@
   }
 }
 
-/* Responsive Mobile */
-@media only screen and (max-width: 432px) {
 
-  .content h2 {
-    font-size: 24px;
-    text-align: center;
-  }
-  .content p {
-    font-size: 12px;
-  }
-}
 
