@@ -80,24 +80,5 @@ form small {
   }
 }
 
-/* Responsive Mobile */
-@media only screen and (max-width: 432px) {
-  body {
-   overflow-y:hidden;
-  }
-  form small {
-    width: 78%;
-  }
-  .containerForm  {
-    margin: -180px auto;
-    max-width: 100%;
-    height: 120vh;
-  }
-  .containerForm img {
-    margin: 0 auto;
-    padding: 0 70px;
-    max-width: 100%;
-  }
-   
-}
+
 
