@@ -75,8 +75,12 @@ form small {
     margin: 0 auto;
   }
   .containerForm img {
-    margin-top: 2px;
-    width: 380px;
+    margin: 0 auto;
+    width: 260px;
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
