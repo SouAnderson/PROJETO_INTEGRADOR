@@ -10,7 +10,7 @@ let passwordText = document.getElementById('passwordText');
 let phoneText = document.getElementById('phoneText');
 let formText = document.getElementById('formText');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
     if (userName.value == '' && userEmail.value == '' && userPassword.value == '' && userPhone.value == '') {
         formText.style.color = '#fff'
         formText.style.fontSize = '0.9em'
