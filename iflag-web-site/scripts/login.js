@@ -1,12 +1,12 @@
 
 let userEmail = document.getElementById('email');
 let userPassword = document.getElementById('password');
-let form = document.querySelector("form");
+let form = document.querySelector('form');
 let emailText = document.getElementById('emailText');
 let passwordText = document.getElementById('passwordText');
 let formText = document.getElementById('formText');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
     if (userEmail.value == '' && userPassword.value == '') {
         formText.style.color = '#fff'
         formText.style.fontSize = '1em'
