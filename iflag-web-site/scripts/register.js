@@ -60,7 +60,7 @@ userPassword.addEventListener('keyup', () => {
 
 userPhone.addEventListener('keyup', () => {
     if (phoneValidate(userPhone.value) !== true) {
-        phoneText.textContent = 'Telefone inválido.'
+        phoneText.textContent = 'Número inválido. Digite, ex: (XX) X XXXX-XXXX'
     } else {
         phoneText.textContent = '';
     }
