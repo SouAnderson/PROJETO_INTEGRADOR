@@ -82,11 +82,13 @@ form small {
     justify-content: center;
     align-items: center;
   }
+
   .containerForm img {
     margin: 0 auto;
     width: 260px;
     max-width:100%;
   }
+  
 }
 
 

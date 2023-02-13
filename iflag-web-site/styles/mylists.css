@@ -141,12 +141,14 @@
     max-width: 100%;
     width: 407px;
   }
+
   .list-section ul li,
   .list-section ul li:nth-child(odd) .list-section ul {
     max-width: 100%;
     width: 84%;
     margin: 0 auto;
   }
+
 }
 
 

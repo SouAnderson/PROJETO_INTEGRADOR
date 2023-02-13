@@ -1,4 +1,3 @@
-
 let userName = document.getElementById('name');
 let userEmail = document.getElementById('email');
 let userPassword = document.getElementById('password');
@@ -21,14 +20,12 @@ form.addEventListener('submit', (e) => {
         passwordValidate(userPassword.value) === true &&
         phoneValidate(userPhone.value) === true
     ) {
-
         nameText.textContent = '';
         emailText.textContent = '';
         passwordText.textContent = '';
         phoneText.textContent = '';
-
         alert("Sucesso! Você será redirecionado para a página de Login!");
-        location.href = "/pages/login.html"
+        location.href = "../pages/login.html"
     }
     e.preventDefault();
 })
