@@ -49,6 +49,10 @@ form {
   margin: 0 auto;
 }
 
+#formText {
+  margin-top: 14px;
+}
+
 form small {
   text-align: center;
   color: #fff;
@@ -93,14 +97,24 @@ a:hover {
 /* Responsive  */
 @media (max-width: 770px) {
   form small {
-  width: 88%;
-  margin: 0 auto;
+    font-size: 0.9em;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 40px;
+    justify-content: center;
+    align-items: center;
   }
-
   .containerForm img {
    margin: 0 auto;
    width: 260px;
    max-width:100%;
+  }
+  .spansContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
   }
 }
 

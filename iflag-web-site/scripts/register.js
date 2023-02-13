@@ -52,7 +52,7 @@ userEmail.addEventListener('keyup', () => {
 userPassword.addEventListener('keyup', () => {
     if (passwordValidate(userPassword.value) !== true) {
         passwordText.textContent =
-            "A senha dever ter no mínimo seis caracteres, um caractere especial, um número, uma letra maiscúla e uma letra minúscula."
+            "A senha dever ter no mínimo seis caracteres, um caractere especial, um número, uma letra maiúscula e uma letra minúscula."
     } else {
         passwordText.textContent = '';
     }

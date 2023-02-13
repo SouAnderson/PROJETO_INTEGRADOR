@@ -49,6 +49,10 @@ form {
   margin: 0 auto;
 }
 
+#formText {
+  margin-top: 5px;
+}
+
 form small {
   text-align: center;
   color: #fff;
@@ -71,8 +75,12 @@ form small {
 /* Responsive */
 @media (max-width: 770px) {
   form small {
-    width: 88%;
+    font-size: 0.9em;
     margin: 0 auto;
+    display: flex;
+    padding: 0 40px;
+    justify-content: center;
+    align-items: center;
   }
   .containerForm img {
     margin: 0 auto;
