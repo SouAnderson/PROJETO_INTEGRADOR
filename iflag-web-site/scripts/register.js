@@ -1,4 +1,3 @@
-
 let userName = document.getElementById('name');
 let userEmail = document.getElementById('email');
 let userPassword = document.getElementById('password');
@@ -21,14 +20,12 @@ form.addEventListener('submit', (e) => {
         passwordValidate(userPassword.value) === true &&
         phoneValidate(userPhone.value) === true
     ) {
-
         nameText.textContent = '';
         emailText.textContent = '';
         passwordText.textContent = '';
         phoneText.textContent = '';
-
         alert("Sucesso! Você será redirecionado para a página de Login!");
-        location.href = "/pages/login.html"
+        location.href = "../pages/login.html"
     }
     e.preventDefault();
 })
@@ -52,7 +49,7 @@ userEmail.addEventListener('keyup', () => {
 userPassword.addEventListener('keyup', () => {
     if (passwordValidate(userPassword.value) !== true) {
         passwordText.textContent =
-            "A senha dever ter no mínimo seis caracteres, um caractere especial, um número, uma letra maiscúla e uma letra minúscula."
+            "A senha dever ter no mínimo seis caracteres, um caractere especial, um número, uma letra maiúscula e uma letra minúscula."
     } else {
         passwordText.textContent = '';
     }

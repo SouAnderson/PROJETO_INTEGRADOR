@@ -1,9 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
   font-family: 'Roboto', sans-serif;
 }
+
 .links {
   background: rgba(54, 30, 93, 0.9);
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
@@ -32,6 +32,7 @@
   font-size: 1rem;
 }
 
+/* Responsive */
 @media(max-width: 500px) {
   .links .links-inner {
     grid-template-columns: 1fr;
@@ -40,6 +41,7 @@
   .links .links-inner ul {
     margin-bottom: 20px;
   }
+
 }
 
 
