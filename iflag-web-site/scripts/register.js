@@ -3,7 +3,7 @@ let userName = document.getElementById('name');
 let userEmail = document.getElementById('email');
 let userPassword = document.getElementById('password');
 let userPhone = document.getElementById('userPhone');
-let form = document.querySelector("form");
+let form = document.querySelector('form');
 let nameText = document.getElementById('nameText');
 let emailText = document.getElementById('emailText');
 let passwordText = document.getElementById('passwordText');
@@ -31,7 +31,7 @@ form.addEventListener("submit", (e) => {
         location.href = "/pages/login.html"
     }
     e.preventDefault();
-})
+});
 
 userName.addEventListener('keyup', () => {
     if (nameValidate(userName.value) !== true) {
@@ -39,7 +39,7 @@ userName.addEventListener('keyup', () => {
     } else {
         nameText.textContent = '';
     }
-})
+});
 
 userEmail.addEventListener('keyup', () => {
     if (emailValidate(userEmail.value) !== true) {
@@ -47,7 +47,7 @@ userEmail.addEventListener('keyup', () => {
     } else {
         emailText.textContent = '';
     }
-})
+});
 
 userPassword.addEventListener('keyup', () => {
     if (passwordValidate(userPassword.value) !== true) {
@@ -56,7 +56,7 @@ userPassword.addEventListener('keyup', () => {
     } else {
         passwordText.textContent = '';
     }
-})
+});
 
 userPhone.addEventListener('keyup', () => {
     if (phoneValidate(userPhone.value) !== true) {
@@ -64,7 +64,7 @@ userPhone.addEventListener('keyup', () => {
     } else {
         phoneText.textContent = '';
     }
-})
+});
 
 function nameValidate(userName) {
     let patternName = /^[A-Z][a-z]* [A-Z][a-z]*$/;
