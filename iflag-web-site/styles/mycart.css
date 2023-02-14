@@ -288,10 +288,10 @@ h1#cabPreco{
   }
   .tprodutos{
     height: auto;
-    grid-template-rows: 12vh 12vh 12vh 12vh;
+    grid-template-rows: 12vh 12vh 12vh 12vh;    
   }
-  .vTotal h1{            
+  .vTotal h1{ 
     margin-left: -80px;
-    margin-bottom: 80px;
+    margin-bottom: 80px; 
   }
 }
