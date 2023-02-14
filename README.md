@@ -48,7 +48,7 @@ Fernando H.B.S.
 
 #### A implantação foi feita na plataforma Netlify.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/43249d99-73fc-44df-b93b-52a63c01c179/deploy-status)](https://app.netlify.com/sites/iflag-corporation/deploys)
+https://iflag-corporation.netlify.app/
 
   
 ##
