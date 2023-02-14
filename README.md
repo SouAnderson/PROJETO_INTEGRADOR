@@ -50,10 +50,9 @@ Giovanni Dias
 
 #### A implementação foi feita na plataforma Netlify.
 
-https://iflag-home-page.netlify.app/
+https://iflag-corporation.netlify.app/index.html
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7112f711-b5b4-4553-a409-04716a5205c4/deploy-status)](https://app.netlify.com/sites/iflag-home-page/deploys)
-  
+
 ##
 
 
