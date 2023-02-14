@@ -45,7 +45,7 @@
   color: var(--third-color);
   font-size: 18px;
   transition: 0.2s;
-  width: 524px;
+  width: 520px;
   margin: 0 auto;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -140,11 +140,12 @@
     max-width: 100%;
     width: 407px;
   }
+
   .list-section ul li,
   .list-section ul li:nth-child(odd) .list-section ul {
     max-width: 100%;
-     width: 84.4%;
+    width: 407px;
     margin: 0 auto;
   }
-}
 
+}

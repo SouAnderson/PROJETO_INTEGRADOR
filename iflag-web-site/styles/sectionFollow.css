@@ -1,9 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
   font-family: 'Roboto', sans-serif;
 }
+
 .follow {
   display: flex;
   align-items: center;
@@ -14,12 +14,13 @@
 
 .follow p {
   font-weight: 500;
-  color :rgba(54, 30, 93, 0.9);
+  color: rgba(54, 30, 93, 0.9);
 }
 
 .follow a {
   color: #FF6422;
 }
+
 .follow a:hover {
   color: #ffffff;
   background: rgba(54, 30, 93, 0.9);
@@ -30,4 +31,3 @@
   border-radius: 8px;
   padding: 4px;
 }
-

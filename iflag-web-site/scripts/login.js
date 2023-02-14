@@ -1,4 +1,3 @@
-
 let userEmail = document.getElementById('email');
 let userPassword = document.getElementById('password');
 let form = document.querySelector('form');
@@ -17,10 +16,8 @@ form.addEventListener("submit", (e) => {
     ) {
         emailText.textContent = '';
         passwordText.textContent = '';
-        //console.log(userEmail.value);
-        //console.log(userPassword.value);
         alert("Sucesso! Você será redirecionado para a página inicial!");
-        location.href = "/index.html"
+        location.href = "../index.html"
     }
     e.preventDefault();
 });

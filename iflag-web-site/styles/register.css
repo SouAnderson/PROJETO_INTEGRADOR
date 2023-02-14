@@ -31,7 +31,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin:  5px auto;
+  margin: 5px auto;
   gap: 8px;
   width: 100%;
 }
@@ -49,10 +49,17 @@ form {
   margin: 0 auto;
 }
 
+#formText {
+  margin-top: 5px;
+}
+
 form small {
   text-align: center;
   color: #fff;
   font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #btnSubmit {
@@ -71,18 +78,20 @@ form small {
 /* Responsive */
 @media (max-width: 770px) {
   form small {
-    width: 88%;
+    font-size: 0.9em;
     margin: 0 auto;
-  }
-  .containerForm img {
-    margin: 0 auto;
-    width: 260px;
-    max-width:100%;
     display: flex;
+    padding: 0 40px;
     justify-content: center;
     align-items: center;
   }
-}
 
+  .containerForm img {
+    margin: 0 auto;
+    width: 260px;
+    max-width: 100%;
+  }
+
+}
 
 

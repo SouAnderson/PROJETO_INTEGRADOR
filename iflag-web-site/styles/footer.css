@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
 
 .footer {
   color: #f2f2f2;
@@ -40,10 +45,9 @@
 }
 
 @media(max-width: 500px) {
-  .footer-inner ul li  {
+  .footer-inner ul li {
     width: 100%;
     text-align: center;
   }
 
 }
-
