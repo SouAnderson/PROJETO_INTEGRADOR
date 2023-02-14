@@ -28,11 +28,9 @@ Anderson Santos
 
 Antonio Landim
 
-Daniel Bento Alves
-
 Fernando H.B.S.
 
-Giovanni Dias
+
  
 ##
 
@@ -46,13 +44,12 @@ Giovanni Dias
 
 ## 
   
- ## Deploy da Página inicial.
+ ## Deploy do Site.
 
-#### A implementação foi feita na plataforma Netlify.
+#### A implantação foi feita na plataforma Netlify.
 
-https://iflag-home-page.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43249d99-73fc-44df-b93b-52a63c01c179/deploy-status)](https://app.netlify.com/sites/iflag-corporation/deploys)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7112f711-b5b4-4553-a409-04716a5205c4/deploy-status)](https://app.netlify.com/sites/iflag-home-page/deploys)
   
 ##
 
