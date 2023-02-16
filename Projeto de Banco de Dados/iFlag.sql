@@ -211,6 +211,33 @@ LOCK TABLES `telefone_do_cliente` WRITE;
 INSERT INTO `telefone_do_cliente` VALUES (1,'(11) 1111-1111',1),(2,'(22) 2222-2222',2),(3,'(33) 3333-3333',3),(4,'(44) 4444-4444',4);
 /*!40000 ALTER TABLE `telefone_do_cliente` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usuarios` (
+  `ID_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `array_acesso` varchar(255) NOT NULL,
+  `senha` varbinary(256) NOT NULL,
+  PRIMARY KEY (`ID_usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuarios`
+--
+
+LOCK TABLES `usuarios` WRITE;
+/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+INSERT INTO `usuarios` VALUES (1,'Jo√£o da Silva','joao.silva@email.com','1111111111','õä¡ü\“ê\È\Ê6b\ﬂ7'),(2,'Maria Lu√≠za','maria.luiza@email.com','1111111111','•q/Ãç†b\Œiÿ™\0ê9å'),(3,'Pedro Ant√¥nio','pedro.antonio@email.com','1111111111','o\‚Rü˝µ™@¡}µ?c±');
+/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -221,4 +248,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-13 18:49:03
+-- Dump completed on 2023-02-15 20:49:30
